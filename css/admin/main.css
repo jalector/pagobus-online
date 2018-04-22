@@ -1,0 +1,39 @@
+
+#bar-logo{
+    width:35%;
+}
+#bar-usuario-imagen{
+    width: 80%;
+    background: #eee;
+    border-radius: 55%;
+}
+#bar-usuario-nombre{
+    padding:0px;
+    margin: 10px;
+}
+#main-contenedor{
+    padding:0px 0px 100px 0px;
+    height: 100%;
+    background: #eee;
+
+}
+#main-contenedor{
+    padding:0px 0px 100px 0px;
+    background: #eee;
+
+}
+
+body{
+	background-image: url("../../img/main_background.jpg");
+	background-attachment: fixed;;
+}
+
+.boton-opcion{
+    margin: 10px;
+    width: 130px;
+}
+.test{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 100px;
+}
