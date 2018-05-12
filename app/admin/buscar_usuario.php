@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Administrador</title>
+  <title>Buscar usuario</title>
   <meta charset="utf-8">
   <link rel="shortcut icon" type="image/ico" href="../../img/main_ico.ico">
   <link rel="stylesheet" type="text/css" href="../../lib/animate.css">
@@ -12,7 +11,14 @@
   <script src="../../lib/popper.js"></script>
   <script type="text/javascript" src="../../lib/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
 
-
+  <style>
+    .margin-10{
+      margin:10px;
+    }
+    .no-padding{
+      padding: 0px;
+    }
+  </style>
 </head>
 
 <body>
@@ -27,7 +33,6 @@
 
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-
         </ul>
         <p id="bar-usuario-nombre">Juan Alberto</p>
         <a>
@@ -46,15 +51,38 @@
 
       </div>
       <!-- Contenedor lateral derecho -->
-      <div id="der-contenedor" class="col-md-9" >
-          <div class="jumbotron jumbotron-fluid">
-              <div class="container">
-                <h3 class="display-4">Bienvenido</h1>
-                <p class="lead">En la Dirección General de Movilidad, asumimos el compromiso de fomentar, promover y gestionar la movilidad no motorizada como medio de transporte producto, en específico la bicicleta</p>
-                <hr class="my-4">
-                <p>Con el sistema de pagobus podrás mirar, revizar y subir tus datos para poder tramitar tu tarjeta pagobus.</p>
-              </div>
+      <div id="der-contenedor" class="col-md-9 container" >
+        <!-- Barra para buscar -->   
+        <div class="row justify-content-center margin-10">
+          <div class="input-group col-8">
+            <input type="text" class="form-control" placeholder="Busca a un usuario">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">Buscar</button>
             </div>
+          </div>
+        </div>
+        <div class="row justify-content-center margin-10">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Cooreo</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Juan Alberto</td>
+                    <td>juda_alector@hotmail.com</td>
+                    <td>Pendiente</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+       
       </div>
 
     </div>

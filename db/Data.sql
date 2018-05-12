@@ -80,8 +80,3 @@ insert into Usuario values(null, '123asdZXC', 'José', 'Falcon', '19990420', 'de
 insert into Usuario values(null, '123asdZXC', 'Alfonso', 'Calles', '19921022', 'default', 'Colinas de Santa Julia', 'Cobre De Echeveste #1028', 'alfonso_25@hotmail.com', null, 3, 13);
 insert into Usuario values(null, '123asdZXC', 'Analuisa', 'Barvosa', '20020611', 'default', 'Aztecas', 'Canela #1240', 'analuisa_22@hotmail.com', null, 3, 14);
 insert into Usuario values(null, '123asdZXC', 'Juan', 'Montemar', '19960714', 'default', 'Colinas San Francisco', 'Cacho #774', 'juan_26@hotmail.com', null, 3, 15);
-insert into Usuario values(null, '123asdZXC', 'Sandra', 'Juarez', '19970110', 'default', 'Colinas de La Fragua Plus', 'Cofradía #1704', 'sandra_69@hotmail.com', null, 3, 16);
-insert into Usuario values(null, '123asdZXC', 'Juan', 'Calsada', '19920101', 'default', 'Cumbres de Arbide', 'Corambo #439', 'juan_30@hotmail.com', null, 3, 17);
-insert into Usuario values(null, '123asdZXC', 'Jorge', 'Feliz', '20030123', 'default', 'Colinas de Plata', 'Cofre De Perote #218', 'jorge_53@hotmail.com', null, 3, 18);
-insert into Usuario values(null, '123asdZXC', 'Patricia', 'Hernández', '20010701', 'default', 'Acrópolis', 'El Maguey #1643', 'patricia_39@hotmail.com', null, 3, 19);
-insert into Usuario values(null, '123asdZXC', 'André', 'Montesillo', '19940908', 'default', 'Bellavista', 'Del Polen #1446', 'andré_20@hotmail.com', null, 3, 20);
