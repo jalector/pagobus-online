@@ -13,14 +13,24 @@
 }
 #main-contenedor{
     padding:0px 0px 100px 0px;
-    height: 100%;
     background: #eee;
 
 }
-#main-contenedor{
-    padding:0px 0px 100px 0px;
-    background: #eee;
 
+#izq-contenedor{
+    background: #dce1e6;
+    margin: 0px 15px 0px 40px;
+    border-radius: 5px;
+}
+
+#der-contenedor{
+    border:2px solid black;
+    border-radius: 5px;
+    padding:0px;    
+}
+
+#der-contenedor .jumbotron{
+    margin-bottom: 2px;
 }
 
 body{
@@ -31,7 +41,9 @@ body{
 .boton-opcion{
     margin: 10px;
     width: 130px;
+    background-color: #169bd5;
 }
+/*009900*/
 .test{
     border: 1px solid black;
     border-radius: 10px;
