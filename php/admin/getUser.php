@@ -1,29 +1,40 @@
 <?php
-    include '../conexion.php';
+    /**
+     * Nombre: Juda Alector Vallejo Herrera
+     * Descripción: Archivo que manda información de bases de datos acerca de los Usuarios
+     * Fecha: 11 de Mayo del 2018
+     */
 
+    include '../conexion.php';
+    //Nos conectamos a bases de datos.
     $conexion = conectar();
-    $consulta = "select u.id_usuario, concat(u.nombre, ' ', u.apellido) as nombre, u.correo, e.tipo_estado from usuario u join estado e on u.id_status = e.id_Status;";
+    //Obtenemos los datos de la peticíon
+    $value = $_POST['value'];
+    $type = $_POST['type'];
+    //Consulta a ejecutar
+    $consulta = "select * from (select u.id_usuario as id, concat(u.nombre, ' ', u.apellido) as nombre, u.correo, e.tipo_estado as estado from usuario u join estado e on u.id_status = e.id_Status) c ";
+    //Se evalua el tipo de busquedas
+    if($value != ""){
+        switch($type){
+            case "id":      $consulta .= "where c.id = ". $value . ";"; break;
+            case "nombre":  $consulta .= "where c.nombre like '%".$value."%';"; break;
+            case "correo":  $consulta .= "where c.correo = '".$value."';"; break;
+            case "estado":  $consulta .= "where c.estado = '".$value."';"; break;
+        }
+    }
     $resultado = $conexion->query($consulta);
     $respuesta = array();
+    //El resultado es ahora transformado a un arreglo
     if ($resultado->num_rows > 0) {
         while($renglon = $resultado->fetch_assoc()) {
             $respuesta[] = $renglon;
         }
+    }else{
+        //Respuesta sí la consuta regresó sin nada.
+        $respuesta[] = array("id" => '0', "nombre" => 'no data', "correo" => 'nodata@nodata', "estado" => 'nodata');
     }
+    //Cerramos la conexión.
     $conexion->close();
-
-    function utf8ize($d) {
-        if (is_array($d)) {
-            foreach ($d as $k => $v) {
-                $d[$k] = utf8ize($v);
-            }
-        } else if (is_string ($d)) {
-            return utf8_encode($d);
-        }
-        return $d;
-    }
-
+    //Devolvemos la respuesta.
     echo json_encode(utf8ize($respuesta));
-    
-
 ?>

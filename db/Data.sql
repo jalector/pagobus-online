@@ -2,6 +2,12 @@
 ################### Pagobus Online Base de datos prueba ##########################
 ##################################################################################
 
+/*
+* Nombre: Juda Alector Vallejo Herrera
+* Descripción: Bases de datos de prueba
+* Fecha: 6 de mayo del 2018
+*/
+
 use PagobusOnline;
 -- Insertamos los grupos de usarios
 insert into TipoUsuario (descripcion) values ("master");
@@ -21,6 +27,7 @@ insert into Empleado values(null, 'Daniel', 'Barrientos', 19, 'Cementos', 'De La
 insert into Empleado values(null, 'Alfonso', 'Monteon', 68, 'Cumbres del Sol', 'Chiapas Norte #1545', 'alfonso_68@hotmail.com', '123asdZXC', '19730325', 2);
 insert into Empleado values(null, 'Sandra', 'Feliz', 49, 'Aztecas', 'Argón #1430', 'sandra_49@hotmail.com', '123asdZXC', '19580813', 2);
 
+-- Insertamos los datos en historial.
 insert into Historial values(null, 'nuevo_usuario', '', 1, 1);
 insert into Historial values(null, 'nuevo_usuario', '', 2, 2);
 insert into Historial values(null, 'nuevo_usuario', '', 3, 3);
@@ -42,6 +49,7 @@ insert into Historial values(null, 'nuevo_usuario', '', 8, 8);
 insert into Historial values(null, 'nuevo_usuario', '', 9, 9);
 insert into Historial values(null, 'nuevo_usuario', '', 10, 10);
 
+-- Insertamos los datos en estado.
 insert into Estado values(null, 'pendiente', curdate(), 1);
 insert into Estado values(null, 'pendiente', curdate(), 2);
 insert into Estado values(null, 'pendiente', curdate(), 3);
@@ -63,8 +71,7 @@ insert into Estado values(null, 'pendiente', curdate(), 18);
 insert into Estado values(null, 'pendiente', curdate(), 19);
 insert into Estado values(null, 'pendiente', curdate(), 20);
 
-
--- Usuarios
+-- Insertamos los datos para Usuarios
 insert into Usuario values(null, '123asdZXC', 'Sandra', 'Fajardo', '19920822', 'default', 'Club Loyola', 'Coba Sur #1791', 'sandra_73@hotmail.com', null, 3, 1);
 insert into Usuario values(null, '123asdZXC', 'Iraís', 'Cama', '19931018', 'default', 'Bellavista', 'Dos Oriente #565', 'iraís_57@hotmail.com', null, 3, 2);
 insert into Usuario values(null, '123asdZXC', 'Cristian', 'Barron', '19950109', 'default', 'Cerrito de La Joya', 'De La Aparición #131', 'cristian_21@hotmail.com', null, 3, 3);
@@ -80,3 +87,8 @@ insert into Usuario values(null, '123asdZXC', 'José', 'Falcon', '19990420', 'de
 insert into Usuario values(null, '123asdZXC', 'Alfonso', 'Calles', '19921022', 'default', 'Colinas de Santa Julia', 'Cobre De Echeveste #1028', 'alfonso_25@hotmail.com', null, 3, 13);
 insert into Usuario values(null, '123asdZXC', 'Analuisa', 'Barvosa', '20020611', 'default', 'Aztecas', 'Canela #1240', 'analuisa_22@hotmail.com', null, 3, 14);
 insert into Usuario values(null, '123asdZXC', 'Juan', 'Montemar', '19960714', 'default', 'Colinas San Francisco', 'Cacho #774', 'juan_26@hotmail.com', null, 3, 15);
+insert into Usuario values(null, '123asdZXC', 'Sandra', 'Juarez', '19970110', 'default', 'Colinas de La Fragua Plus', 'Cofradía #1704', 'sandra_69@hotmail.com', null, 3, 16);
+insert into Usuario values(null, '123asdZXC', 'Juan', 'Calsada', '19920101', 'default', 'Cumbres de Arbide', 'Corambo #439', 'juan_30@hotmail.com', null, 3, 17);
+insert into Usuario values(null, '123asdZXC', 'Jorge', 'Feliz', '20030123', 'default', 'Colinas de Plata', 'Cofre De Perote #218', 'jorge_53@hotmail.com', null, 3, 18);
+insert into Usuario values(null, '123asdZXC', 'Patricia', 'Hernández', '20010701', 'default', 'Acrópolis', 'El Maguey #1643', 'patricia_39@hotmail.com', null, 3, 19);
+insert into Usuario values(null, '123asdZXC', 'André', 'Montesillo', '19940908', 'default', 'Bellavista', 'Del Polen #1446', 'andré_20@hotmail.com', null, 3, 20); 
