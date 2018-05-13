@@ -1,0 +1,25 @@
+#formulario{
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn-formulario{
+    background: green;
+    width: 180px;
+}
+
+input{
+    width: 300px;
+    margin: 5px;
+}
+
+label{
+    font-size: 20px;
+    margin: 5px;
+    width: 200px;
+}
+
+table{
+    margin: 0px 0px 10px 50px;
+}
+
