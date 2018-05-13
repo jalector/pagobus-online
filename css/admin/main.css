@@ -19,8 +19,8 @@
 
 #izq-contenedor{
     background: #dce1e6;
-    margin: 0px 15px 0px 40px;
-    border-radius: 5px;
+    margin: 0px 20px 0px 30px;
+    border-radius: 10px;
 }
 
 #der-contenedor{
@@ -40,7 +40,7 @@ body{
 
 .boton-opcion{
     margin: 10px;
-    width: 130px;
+    width: 160px;
     background-color: #169bd5;
 }
 /*009900*/
