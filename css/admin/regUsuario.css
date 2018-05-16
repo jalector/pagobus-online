@@ -1,25 +1,38 @@
 #formulario{
     margin: 10px;
     padding: 10px;
+    font-family: 'Lucida Sans';
+    float: left;
+    width: 55%;
+}
+
+#img-usr{
+    margin: 10px;
+    padding: 10px;
+    float: right;
+    width: 40%;
 }
 
 .btn-formulario{
-    background: green;
+    background: #009900;
+    margin: 15px;
     width: 180px;
+    float: right;
 }
 
 input{
-    width: 300px;
     margin: 5px;
+    width: 250px;
 }
 
 label{
-    font-size: 20px;
+    font-size: 18px;
     margin: 5px;
     width: 200px;
 }
 
-table{
-    margin: 0px 0px 10px 50px;
+#Archivo{
+    width: 100%;
+    font-size: 11px;
 }
 
