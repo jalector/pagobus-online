@@ -15,7 +15,7 @@
   <script src="../../lib/jquery-3.3.1.js"></script>
   <script src="../../lib/popper.js"></script>
   <script type="text/javascript" src="../../lib/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
-
+  <script src="../../lib/node_modules/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
@@ -42,14 +42,12 @@
 
     <div class="container-fluid row" style="margin-top:30px">
       <!-- Contenedor lateral izquierdo -->
-      <div id="izq-contenedor" class="col-md-2">
-          <a href="../admin/registrarUsuario.html"> 
-            <button id="btn-registrar" type="button" class="btn boton-opcion">Registrar</button></a>
-            <a href="../admin/buscarUsuario.html">
-            <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button></a>
-            <a href="../admin/archivosPen.html">
-            <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button></a>
-          <button id="btn-salir" type="button" class="btn boton-opcion">Salir</button>
+      <div id="izq-contenedor" class="col-md-2"> 
+            <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
+            <button id="btn-registrar" type="button" class="btn boton-opcion">Registrar</button>
+            <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button>
+            <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button>
+            <button id="btn-salir" type="button" class="btn boton-opcion">Salir</button>
 
       </div>
       <!-- Contenedor lateral derecho -->

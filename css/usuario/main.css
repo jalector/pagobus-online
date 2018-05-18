@@ -1,0 +1,28 @@
+
+/*
+    Nombre: Angel Hernández Rivera
+    Descripción: Código de estilos de las pantallas de usuario.
+    Fecha: 15 de Mayo del 2018
+*/
+#formulario{
+	font-size: 20px;
+}
+
+#logo-opti{
+
+	padding:0px; 
+}
+
+#subir-foto{
+	padding-top: 10px;
+
+}
+
+#nota{
+
+	padding-right: 30px;
+}
+#lbl-credencial{
+
+	padding-right: 30px;
+}
