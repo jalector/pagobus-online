@@ -17,7 +17,7 @@
 
 body{
 	background-image: url("../img/main_background.jpg");
-	background-attachment: fixed;;
+    background-attachment: fixed;;
 }
 
 #bar-logo{
@@ -47,7 +47,7 @@ body{
 #der-contenedor{
     border:2px solid black;
     border-radius: 5px;
-    padding:0px;    
+    padding:0px;  
 }
 
 #der-contenedor .jumbotron{

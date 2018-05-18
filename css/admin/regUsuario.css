@@ -1,0 +1,43 @@
+/*
+    Nombre: Juan Pablo Gallardo Ochooa
+    Descripción: Código de estilos de la pantallapara registrar un usuario.
+    Fecha: 13 de Mayo del 2018
+*/
+#formulario{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Lucida Sans';
+    float: left;
+    width: 55%;
+}
+
+#img-usr{
+    margin: 10px;
+    padding: 10px;
+    float: right;
+    width: 40%;
+}
+
+.btn-formulario{
+    background: #009900;
+    margin: 15px;
+    width: 180px;
+    float: right;
+}
+
+input{
+    margin: 5px;
+    width: 250px;
+}
+
+label{
+    font-size: 18px;
+    margin: 5px;
+    width: 200px;
+}
+
+#Archivo{
+    width: 100%;
+    font-size: 11px;
+}
+
