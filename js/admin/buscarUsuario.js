@@ -82,7 +82,7 @@
             case "pendiente":   answer = "table-warning"; break;
             case "aceptado":    answer = "table-success"; break;
             case "rechazado":   answer = "table-danger"; break;
-            case "sacion_uno":  answer = "table-secondary"; break;
+            case "sancion_uno":  answer = "table-secondary"; break;
             case "sancion_dos": answer = "table-secondary"; break;
             case "vetado":      answer = "table-dark"; break;
             default : answer = "table-dark"; break;
@@ -113,7 +113,7 @@
         //Ponemos cada renglon de la tabla.
         json.forEach(function(element, index){
             tb.append($('<tr>',{
-                class:statusToColor(element.estado),
+                class: statusToColor(element.estado),
                 html: [
                     $('<th>', {html: element.id}),
                     $('<td>', {html: element.nombre}),
