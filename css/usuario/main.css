@@ -8,16 +8,6 @@
 	font-size: 20px;
 }
 
-#logo-opti{
-
-	padding:0px; 
-}
-
-#subir-foto{
-	padding-top: 10px;
-
-}
-
 #nota{
 
 	padding-right: 30px;
@@ -26,3 +16,21 @@
 
 	padding-right: 30px;
 }
+#img-perf{
+    margin: 10px;
+    padding: 10px;
+    float: right;
+    width: 40%;   
+}
+#Explorador{
+font-size: 11px;
+}
+#lbl-nota{
+background-color: #D8D8D8;
+}
+
+label{
+    font-size: 15px;
+    font-family: 'Lucida Sans';
+}
+
