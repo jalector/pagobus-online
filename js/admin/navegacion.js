@@ -12,7 +12,7 @@ $('#izq-contenedor').click(function(e){
     }
 
     if (id=="btn-busuario") {
-		window.location.remplace("../admin/buscarUsuario.html");
+		window.location.replace("../admin/buscarUsuario.html");
 	}
 		
 	if (id=="btn-principal") {
