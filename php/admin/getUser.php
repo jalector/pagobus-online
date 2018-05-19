@@ -9,8 +9,14 @@
     //Nos conectamos a bases de datos.
     $conexion = conectar();
     //Obtenemos los datos de la peticíon
-    $value = $_POST['value'];
-    $type = $_POST['type'];
+    $value = "";
+    $type = "";
+    if(isset($_POST['value'])){
+        $value = $_POST['value'];
+    }
+    if(isset($_POST['type'])){
+        $type = $_POST['type'];
+    }
     //Consulta a ejecutar
     $consulta = "select * from (select u.id_usuario as id, concat(u.nombre, ' ', u.apellido) as nombre, u.correo, e.tipo_estado as estado from usuario u join estado e on u.id_status = e.id_Status) c ";
     //Se evalua el tipo de busquedas
