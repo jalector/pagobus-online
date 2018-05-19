@@ -8,15 +8,15 @@
 $('#izq-contenedor').click(function(e){
 	var id = e.target.id;
 	if (id=="btn-registrar-empleados") {
-		window.location.assign("../master/registrarEmpleados.html");
+		window.location.replace("../master/registrarEmpleados.html");
 		
     }
 
     if (id=="btn-bempleados") {
-		window.location.assign("../master/busquedaEmpleados.html");
+		window.location.remplace("../master/busquedaEmpleados.html");
     }
     if (id=="btn-inicio") {
-		window.location.assign("../master/index.html");
+		window.location.replace("../master/index.html");
     }
 
 

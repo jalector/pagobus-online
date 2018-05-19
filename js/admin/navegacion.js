@@ -12,11 +12,11 @@ $('#izq-contenedor').click(function(e){
     }
 
     if (id=="btn-busuario") {
-		window.location.assign("../admin/buscarUsuario.html");
+		window.location.remplace("../admin/buscarUsuario.html");
 	}
 		
 	if (id=="btn-principal") {
-		window.location.assign("../admin/index.html");
+		window.location.replace("../admin/index.html");
 	}
 
     if (id=="btn-archivo") {
