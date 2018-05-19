@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <!--
-    Nombre: Juda Alector Vallejo Herrera
-    Descripción: Pantalla de busqueda de usuarios para Administrador.
-    Fecha: 10 de Mayo del 2018
+    Nombre: Valentina Rojas Vàzquez
+    Descripción: Pantalla de busqueda de empleados.
+    Fecha: 17 de Mayo del 2018
   -->
 
 <head>
@@ -17,7 +17,6 @@
   <script src="../../lib/jquery-3.3.1.js"></script>
   <script src="../../lib/popper.js"></script>
   <script type="text/javascript" src="../../lib/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
-  <script src="../../lib/node_modules/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
@@ -34,7 +33,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
         </ul>
-        <p id="bar-usuario-nombre">Juan Alberto</p>
+        <p id="bar-master-nombre">Valentina Rojas</p>
         <a>
           <img src="../../img/user.png" id="bar-usuario-imagen"></img>
         </a>
@@ -44,19 +43,20 @@
     <div class="container-fluid row" style="margin-top:30px">
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
-          <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal</button>
-          <button id="btn-registrar" type="button" class="btn boton-opcion">Registrar</button>
-          <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button>
-          <button id="btn-salir" type="button" class="btn boton-opcion">Salir</button>
-          <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
+        <script type="text/javascript" src="../../js/master/navegacion.js"></script>
+        <button id="btn-inicio" type="button" class="btn boton-opcion">Página Principal </button>
+        <button id="btn-registrar-empleados" type="button" class="btn boton-opcion">Registrar</button>
+        <button id="btn-salir" type="button" class="btn boton-opcion">Salir
+        <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
+        </button>
       </div>
 
       <!-- Contenedor lateral derecho -->
       <div id="der-contenedor" class="col-md-9 container">
         <!-- Texto informativo -->
         <div class="container text-center">
-          <h1>Busqueda de usuarios</h1>
-          <p>Realiza la busqueda de usuarios por id, nombre o correo electrónico</p>
+          <h1>Busqueda de empleados</h1>
+          <p>Realiza la busqueda de empleados por id, nombre o correo electrónico</p>
         </div>
         <!-- Barra para buscar -->
         <div class="row justify-content-center margin-10">
@@ -65,18 +65,17 @@
             <select id="buscador-tipo" class="custom-select input-group-append col-2">
                 <option value="id" selected>ID</option>
                 <option value="nombre">Nombre</option>
-                <option value="estado">Estado</option>
                 <option value="correo">Correo</option>
               </select>
             <button id="buscador-boton" type="button" class="btn btn-success" style="margin-left: 10px;">Buscar</button>
           </div>
         </div>
         <!--    Tabla de usuario -->
-        <div id="tablaUsuarios" class="justify-content-center margin-10"></div>
+        <div id="tablaEmpleados" class="justify-content-center margin-10"></div>
       </div>
     </div>
   </div>
-  <script src="../../js/admin/buscarUsuario.js"></script>
+  <script src="../../js/admin/buscarEmpleado.js"></script>
   
 </body>
 </html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <!--
-  Nombre: Juan Pablo Gallardo Ochoa
-  Descripción: Pantalla para registrar un usuario en la BD.
-  Fecha: 13 de mayo del 2018
+  Nombre: Valentina Rojas Vàzquez
+  Descripción: Pantalla para hacer el registro de un nuevo empleado.
+  Fecha: 17 de mayo del 2018
 -->
 <head>
-  <title>Registrar Usuario</title>
+  <title>Registrar Empleado</title>
   <meta charset="utf-8">
   <link rel="shortcut icon" type="image/ico" href="../../img/main_ico.ico">
   <link rel="stylesheet" type="text/css" href="../../lib/animate.css">
@@ -34,7 +34,7 @@
         <ul class="navbar-nav mr-auto">
 
         </ul>
-        <p id="bar-usuario-nombre">Pablo Gallardo</p>
+        <p id="bar-usuario-nombre">Valentina Rojas</p>
         <a>
           <img src="../../img/user.png" id="bar-usuario-imagen"></img>
         </a>
@@ -44,16 +44,16 @@
     <div class="container-fluid row" style="margin-top:30px">
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
-          <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal</button>
-          <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button>
-          <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button>
-          <button id="btn-salir" type="button" class="btn boton-opcion">Salir</button>
-          <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
+        <script type="text/javascript" src="../../js/master/navegacion.js"></script>
+        <button id="btn-inicio" type="button" class="btn boton-opcion">Página Principal</button>
+        <button id="btn-bempleados" type="button" class="btn boton-opcion">Buscar empleado</button>
+        <button id="btn-salir" type="button" class="btn boton-opcion">Salir</button>
+        <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
       </div>
       <!-- Contenedor lateral derecho -->
       <div id="der-contenedor" class="col-md-9">
         <br>
-          <center><h3>Registro de usuario</h3></center>
+          <center><h3>Registro de empleados</h3></center>
           <!-- Creacion de un contenedor para generar el formulario de llenado-->
           <div id="formulario">
             <!--Tabla para dar mejor formatoa a los componenres-->
@@ -92,16 +92,11 @@
               </tr>
             </table>
             <!--Boton para realizar el registro-->
-               <button id="btn-guardar" type="button" class="btn btn-formulario">Registrar Usuario
+               <button id="btn-salir" type="button" class="btn btn-formulario">Registrar Empleado
                </button>
-               <script src="../../js/admin/registrarUsuario.js"></script>
+            
           </div>
-          <!--Contenedor para ingresar la imagen del usuario-->
-          <div id="img-usr">
-            <br><br><br><br>
-              <img src="../../img/user.png" class="rounded mx-auto d-block"><br>
-              <input type="file" id="Archivo">
-          </div>
+
       </div>
     </div>
   </div>

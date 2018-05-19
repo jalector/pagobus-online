@@ -9,11 +9,11 @@
      * Descripción: Función la cual realiza la petición php para traer los datos.
      * Fecha: 12 de Mayo del 2018
      * @param {String} value, valor que debe de buscar
-     * @param {String} type, por que vía debe de buscarlo {id, nombre, correo, estado}.
+     * @param {String} type, por que vía debe de buscarlo {id, nombre, estado}.
      */
     function getUsers(value = null, type){
         $.ajax({
-            url: "../../php/admin/getUser.php",
+            url: "../../php/master/getUser.php",
             type: "POST",
             data:{
                 value: value,
@@ -21,7 +21,7 @@
             },success:function(data){
                 //Se colocan los datos en el contenedor para la tabla
                 console.log(JSON.parse(data))
-                $('#tablaUsuarios')
+                $('#tablaEmpleados')
                     .empty()
                     .append(createTable(JSON.parse(data)));
             },failure:function(data){
@@ -51,10 +51,6 @@
                 binput.attr('type', 'text');
                 binput.attr('placeholder', "Busca por medio de nombres");
             break;
-            case "correo":
-                binput.attr('type', 'email');         
-                binput.attr('placeholder', "Busca por medio de un correo electrónico");
-            break;
             case "estado":
                 binput.attr('type', 'text');         
                 binput.attr('placeholder', "Busca por medio de estado");
@@ -68,31 +64,10 @@
     });
     bbutton.trigger('click');
 
-    
 
     /**
      * Nombre: Juda Alector Vallejo Herrera
-     * Descripción: Define la clase que debe llevar un renglon en la tabla de usuarios.
-     * Fecha: 12 de Mayo 2018
-     * @param {String} status, Recibe el estado de un usario de la tabla Estado.
-     */
-    function statusToColor(status){
-        let answer = "";
-        switch(status){
-            case "pendiente":   answer = "table-warning"; break;
-            case "aceptado":    answer = "table-success"; break;
-            case "rechazado":   answer = "table-danger"; break;
-            case "sancion_uno":  answer = "table-secondary"; break;
-            case "sancion_dos": answer = "table-secondary"; break;
-            case "vetado":      answer = "table-dark"; break;
-            default : answer = "table-dark"; break;
-        }
-        return answer
-    }
-
-    /**
-     * Nombre: Juda Alector Vallejo Herrera
-     * Descripción: Crea la tabla de los usuarios.
+     * Descripción: Crea la tabla de los empleados.
      * Fecha: 12 de Mayo 2018
      * @param {json} json, Json que contiene datos de la tabla
      */
@@ -104,7 +79,6 @@
             html: [
                 $('<th>', {html:'ID'}),
                 $('<th>', {html:'Nombre'}),
-                $('<th>', {html:'Correo'}),
                 $('<th>', {html:'Estado'}),
             ]
         });
@@ -117,7 +91,6 @@
                 html: [
                     $('<th>', {html: element.id}),
                     $('<td>', {html: element.nombre}),
-                    $('<td>', {html: element.correo}),
                     $('<td>', {html: element.estado}),
                 ]
             }))
