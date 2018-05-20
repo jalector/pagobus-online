@@ -44,7 +44,8 @@
     <div class="container-fluid row" style="margin-top:30px">
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
-        <script type="text/javascript" src="../../js/admin/navegacion.js"></script>  
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
+          <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal</button>
           <button id="btn-registrar" type="button" class="btn boton-opcion">Registrar</button>
           <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button>
           <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button>
@@ -58,64 +59,37 @@
           <!-- Contenedor para los datos-->
             <div id="datos-cont">
               <label for="txt_nombre">Nombre</label><br>
-              <input type="text" id="txt_nombre"><br>
+              <input type="text" id="txt_nombre" ><br>
 
               <label for="txt_apellido">Apellido</label><br>
-              <input type="text" id="txt_apellido"><br>
+              <input type="text" id="txt_apellido" ><br>
 
               <label for="txt_fNacimiento">Fecha de Nacimiento</label><br>
-              <input type="text" id="txt_fNacimiento"><br>
+              <input type="text" id="txt_fNacimiento" ><br>
 
               <label for="txt_colonia">Colonia</label><br>
-              <input type="text" id="txt_colonia"><br>
+              <input type="text" id="txt_colonia" ><br>
 
               <label for="txt_domicilio">Domicilio</label><br>
-              <input type="text" id="txt_domicilio"><br>
+              <input type="text" id="txt_domicilio" ><br>
             </div>
         <!-- Contenedor para la imagen y estus-->
             <div id="imagen-cont">
               <br><br><br>
               <img src="../../img/user.png" class="rounded mx-auto d-block"><br>
-              <label for="txt_colonia">Status:</label>
-              <select class="custom-select">
-                  <option value="1">Pendiente</option>
-                  <option value="2">Aceptado</option>
-                  <option value="3">Rechazado</option>
-                  <option value="4">Sancion 1</option>
-                  <option value="5">Sancion 2</option>
-                  <option value="6">Vetado</option>
-                </select>
+              <label for="txt_status">Status:</label>
+              <input type="text" id="txt_status" ><br>
             </div>
         <!-- Contenedor para la tabla de documentos-->
-            <div id="tablaD-cont">
-                <table class="table">
-                    <thead class="thead-dark">
-                      <tr>
-                        <th scope="col">Documento</th>
-                        <th scope="col">Tipo</th>
-                        <th scope="col">Estado</th>
-                        <th scope="col">Fecha</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">0</th>
-                        <td>no date</td>
-                        <td>no date</td>
-                        <td>no date</td>
-                      </tr>
-                      
-                    </tbody>
-                  </table>
-            </div>
+            <div id="tablaD-cont"></div>
         <!-- Contenedor para los botones-->
             <div id="btn-cont">
-                <button class="btn">Guardar</button>
-                <button class="btn">Editar</button>
+                <button id="btn-Guardar" class="btn">Guardar</button>
             </div>
       </div>
     </div>
   </div>
+  <script src="../../js/admin/verDatos.js"></script>
 </body>
 
 </html>

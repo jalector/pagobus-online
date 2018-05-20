@@ -13,7 +13,11 @@ $('#izq-contenedor').click(function(e){
 
     if (id=="btn-busuario") {
 		window.location.replace("../admin/buscarUsuario.html");
-    }
+	}
+		
+	if (id=="btn-principal") {
+		window.location.replace("../admin/index.html");
+	}
 
     if (id=="btn-archivo") {
 		window.location.replace("../admin/archivosPen.html");
