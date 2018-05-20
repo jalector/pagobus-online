@@ -1,19 +1,19 @@
 /*
-*  Nombre: Juda Alector Vallejo Herrea 
-*  Descripción: Archivo de js, para buscar a usuarios y crear tabla.
-*  Fecha: 12 de Mayo 2018
+*  Nombre: Angel Hernández Rivera
+*  Descripción: Archivo de js, para buscar a empleados y crear tabla.
+*  Fecha: 19 de Mayo 2018
 */
 (function(){
     /**
-     * Nombre: Juda Alector Vallejo Herrera
+     * Nombre: Angel Hernández Rivera
      * Descripción: Función la cual realiza la petición php para traer los datos.
-     * Fecha: 12 de Mayo del 2018
+     * Fecha: 19 de Mayo del 2018
      * @param {String} value, valor que debe de buscar
-     * @param {String} type, por que vía debe de buscarlo {id, nombre, estado}.
+     * @param {String} type, por que vía debe de buscarlo {id, nombre, correo}.
      */
-    function getUsers(value = null, type){
+    function getEmployees(value = null, type){
         $.ajax({
-            url: "../../php/master/getUser.php",
+            url: "../../php/master/getEmpleado.php",
             type: "POST",
             data:{
                 value: value,
@@ -51,24 +51,28 @@
                 binput.attr('type', 'text');
                 binput.attr('placeholder', "Busca por medio de nombres");
             break;
-            case "estado":
+            case "correo":
+                binput.attr('type', 'email');         
+                binput.attr('placeholder', "Busca por medio de un correo electrónico");
+            break;
+            case "contratacion":
                 binput.attr('type', 'text');         
-                binput.attr('placeholder', "Busca por medio de estado");
+                binput.attr('placeholder', "Busca por medio de fecha de contratación");
         }
     });
 
     bbutton.on('click',function(){
         let value = (binput.val() == "")? null: binput.val();
         let type = btype.val(); 
-        getUsers(value, type);
+        getEmployees(value, type);
     });
     bbutton.trigger('click');
 
 
     /**
-     * Nombre: Juda Alector Vallejo Herrera
+     * Nombre: Angel Hernández Rivera
      * Descripción: Crea la tabla de los empleados.
-     * Fecha: 12 de Mayo 2018
+     * Fecha: 19 de Mayo 2018
      * @param {json} json, Json que contiene datos de la tabla
      */
     function createTable(json){
@@ -79,7 +83,8 @@
             html: [
                 $('<th>', {html:'ID'}),
                 $('<th>', {html:'Nombre'}),
-                $('<th>', {html:'Estado'}),
+                $('<th>', {html:'Correo'}),
+                $('<th>', {html:'Contratación'}),
             ]
         });
 
@@ -87,11 +92,11 @@
         //Ponemos cada renglon de la tabla.
         json.forEach(function(element, index){
             tb.append($('<tr>',{
-                class: statusToColor(element.estado),
                 html: [
                     $('<th>', {html: element.id}),
                     $('<td>', {html: element.nombre}),
-                    $('<td>', {html: element.estado}),
+                    $('<td>', {html: element.correo}),
+                    $('<td>', {html: element.contratacion}),
                 ]
             }))
         });

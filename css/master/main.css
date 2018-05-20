@@ -1,6 +1,25 @@
-#tablaUsuarios{
-    margin-top:30px;
-}
+
 .margin-10{
     margin:10px;
+}
+tr:nth-child(odd) {
+    background-color:#EEF7FB;
+}
+tr:nth-child(even) {
+    background-color:#fbfbfb;
+}
+#btn-reg{
+margin-left: 0px;
+font-size: 16px;
+width: 100%;
+}
+#btn-bus{
+margin-left: 0px;
+font-size: 16px;
+width: 100%;
+}
+#btn-salir{
+margin-left: 0px;
+font-size: 16px;
+width: 100%;
 }
