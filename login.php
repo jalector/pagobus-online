@@ -4,7 +4,7 @@ $error = ''; // Variable To Store Error Message
 
 if (isset($_POST['submit'])) {
 if (empty($_POST['correo']) || empty($_POST['contrasena'])) {
-$error = "Correo o contraseña invalidos";
+  $error = "Correo o contraseña invalidos";
 }
 else
 {

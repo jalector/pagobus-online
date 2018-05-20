@@ -88,6 +88,12 @@
             <input id="input-apellido" name="input-apellido" class="form-control" placeholder="Apellidos" type='text' autocomplete="family-name"></input>
           </div>
 
+          <!-- Contraseña -->
+          <div class="form-group col-md-10 offset-md-1">
+            <label for="input-contraseña">Contraseña</label>
+            <input id="input-contraseña" name="input-contraseña" class="form-control" placeholder="Contraseña" type='password'></input>
+          </div>
+
           <!-- Fecha de nacimiento -->
           <div class="form-group col-md-10 offset-md-1">
             <label for="input-fecha">Fecha de nacimiento</label>
@@ -117,7 +123,7 @@
             <label>Recibo de inscripción/colegiatura/constancia de estudios que contenga: nombre completo del alumno, sello oficial
               de la escuela, ciclo escolar y firma del director.</label>
             <div class="">
-              <input id="input-recibo" name="input-recibo" type="file"  accept=".jpg,.jpeg,.png" lang="es" />
+              <input id="input-recibo" name="input-recibo" type="file"  accept=".pdf" lang="es" />
             </div>
           </div>
 
@@ -125,7 +131,7 @@
           <div class="form-group offset-md-1 col-md-10">
             <label>Credencial escolar, certificado de estudios anterior o identificación oficial(INE, pasaporte o licencia de manejo).</label>
             <div class="">
-              <input id="input-identificacion" name="input-identificacion" type="file"  accept=".jpg,.jpeg,.png" lang="es" />
+              <input id="input-identificacion" name="input-identificacion" type="file"  accept=".pdf" lang="es" />
             </div>
           </div>
           <div class="form-group offset-md-1 col-md-10">
@@ -135,7 +141,7 @@
           <div id="form-error" class="alert alert-warning col-md-10 text-center offset-md-1 animated bounceInLeft"  role="alert">
             Para poder guardar, necesitas hacer cambios primero
           </div>
-          <button id="btn-aceptar" type="submit" class="btn btn-success col-md-2 offset-md-5" disabled>Aceptar</button>
+          <button id="btn-aceptar" type="submit" class="btn btn-success col-md-2 offset-md-5" disabled>Guardar cambios  </button>
         </form>
       </div>
     </div>
