@@ -18,7 +18,7 @@
         $type = $_POST['type'];
     }
     //Consulta a ejecutar
-    $consulta = "select * from (select u.id_usuario as id, concat(u.nombre, ' ', u.apellido) as nombre, u.correo, e.tipo_estado as estado from usuario u join estado e on u.id_status = e.id_Status) c ";
+    $consulta = "select * from (select u.id_usuario as id, concat(u.nombre, ' ', u.apellido) as nombre, u.correo, e.tipo_estado as estado from Usuario u join Estado e on u.id_status = e.id_Status) c ";
     //Se evalua el tipo de busquedas
     if($value != ""){
         switch($type){
@@ -39,8 +39,8 @@
         //Respuesta sí la consuta regresó sin nada.
         $respuesta[] = array("id" => '0', "nombre" => 'no data', "correo" => 'nodata@nodata', "estado" => 'nodata');
     }
-    //Cerramos la conexión.
-    $conexion->close();
     //Devolvemos la respuesta.
     echo json_encode(utf8ize($respuesta));
+    //Cerramos la conexión.
+    $conexion->close();
 ?>
