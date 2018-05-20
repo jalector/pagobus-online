@@ -11,10 +11,6 @@ $('#izq-contenedor').click(function(e){
 		window.location.replace("../usuario/Actualizar_Datos.php");
     }
 
-    if (id=="btn-inicio") {
-      window.location.replace("../usuario/index.html");
-    }
-
     if (id=="btn-Vestado") {
 		window.location.replace("../usuario/Ver_Estado.html");
     }

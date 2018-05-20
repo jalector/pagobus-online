@@ -11,6 +11,7 @@
   <link rel="shortcut icon" type="image/ico" href="../../img/main_ico.ico">
   <link rel="stylesheet" type="text/css" href="../../lib/animate.css">
   <link rel="stylesheet" type="text/css" href="../../css/global.css">
+  <link rel="stylesheet" type="text/css" href="../../css/master/main.css">
   <link rel="stylesheet" type="text/css" href="../../css/admin/regUsuario.css">
   <link rel="stylesheet" type="text/css" href="../../lib/bootstrap-4.0.0/dist/css/bootstrap.min.css">
   <script src="../../lib/jquery-3.3.1.js"></script>
@@ -26,9 +27,9 @@
   <div id="main-contenedor" class="container max-width">
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="">
-        <img src="../../img/logo.png" id="bar-logo"></img>
-      </a>
+       <div>
+        <input type="image" alt="Home" src="../../img/logo.png" id="bar-logo">
+      </div>
 
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
@@ -45,10 +46,11 @@
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
         <script type="text/javascript" src="../../js/master/navegacion.js"></script>
-        <button id="btn-inicio" type="button" class="btn boton-opcion">Página Principal</button>
-        <button id="btn-bempleados" type="button" class="btn boton-opcion">Buscar empleado</button>
-        <button id="btn-salir" type="button" class="btn boton-opcion">Salir</button>
-        <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
+        <button id="btn-reg" type="button" class="btn boton-opcion">Registrar empleado</button>
+        <button id="btn-bus" type="button" class="btn boton-opcion">Buscar empleado</button>
+        <button id="btn-salir" type="button" class="btn boton-opcion">Salir
+        <script type="text/javascript" src="../../js/Salir.js"></script> 
+       </button>
       </div>
       <!-- Contenedor lateral derecho -->
       <div id="der-contenedor" class="col-md-9">
@@ -92,7 +94,7 @@
               </tr>
             </table>
             <!--Boton para realizar el registro-->
-               <button id="btn-salir" type="button" class="btn btn-formulario">Registrar Empleado
+               <button id="btn-aceptar" type="button" class="btn btn-formulario">Registrar Empleado
                </button>
             
           </div>

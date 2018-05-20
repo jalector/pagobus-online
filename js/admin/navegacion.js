@@ -10,6 +10,9 @@ $('#izq-contenedor').click(function(e){
 	if (id=="btn-registrar") {
 		window.location.replace("../admin/registrarUsuario.html");
     }
+    if (id=="btn-inicio") {
+		window.location.assign("../admin/index.html");
+    }
 
     if (id=="btn-busuario") {
 		window.location.replace("../admin/buscarUsuario.html");

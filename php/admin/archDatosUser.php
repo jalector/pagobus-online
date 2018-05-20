@@ -2,19 +2,19 @@
     /**
      * Nombre: Juan Pablo Gallardo Ochoa
      * Descripción: Archivo que manda información de bases de datos acerca de los Archivos
-     * Fecha: 18 de Mayo del 2018
+     * Fecha: 19 de Mayo del 2018
      */
 
     include '../conexion.php';
     //Nos conectamos a bases de datos.
     $conexion = conectar();
     //Obtenemos los datos de la peticíon
-    $estado = $_POST['estado'];
+    $id = $_POST['id'];
     //Consulta a ejecutar
     $consulta = "
-    select u.id_usuario as id, d.documento as documento, concat(u.nombre, ' ', u.apellido)as nombre, d.estado as estado
-    from usuario u JOIN documento d ON u.id_usuario = d.id_usuario 
-    WHERE d.estado = '".$estado."';";
+    SELECT d.id_Documento as id, d.documento as documento, d.f_actualizacion as fecha, d.estado
+    FROM usuario u JOIN documento d on u.id_usuario = d.id_usuario
+    WHERE u.id_usuario = ".$id.";";
     
     $resultado = $conexion->query($consulta);
     $respuesta = array();
@@ -25,7 +25,7 @@
         }
     }else{
         //Respuesta sí la consuta regresó sin nada.
-        $respuesta[] = array("id" => '0', "documento" => 'no data', "nombre" => 'no data', "estado" => 'no data');
+        $respuesta[] = array("id" => '0', "documento" => 'no data',"fecha" => 'no date', "estado" => 'no data');
     }
     //Cerramos la conexión.
     $conexion->close();
