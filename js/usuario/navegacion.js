@@ -11,6 +11,12 @@ $('#btn-registrar').click(function(e){
 		window.location.assign("../usuario/Actualizar_Datos.html");
     }
 });
+$('#btn-inicio').click(function(e){
+	var id = e.target.id;
+	if (id=="btn-inicio") {
+		window.location.assign("../usuario/index.html");
+    }
+});
 
 $('#btn-Vestado').click(function(e){
 	var id = e.target.id;
@@ -18,6 +24,7 @@ $('#btn-Vestado').click(function(e){
 		window.location.assign("../usuario/Ver_Estado.html");
 		}
 	});
+
 
 $('#btn-salir').click(function(e){
 	var id = e.target.id;

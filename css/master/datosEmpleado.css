@@ -1,0 +1,42 @@
+/*
+    Nombre: Angel Hernández Rivera
+    Descripción: Código de estilos de la pantalla de ver datos de empleados.
+    Fecha: 15 de Mayo del 2018
+*/
+#datos-cont{
+    float: left;
+    margin: 10px;
+    padding: 10px 20px 10px 10px;
+    width: 50%;
+    font-family: 'Lucida Sans';
+}
+
+#imagen-cont{
+    float: right;
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+    width: 45%;
+    font-family: 'Lucida Sans';
+}
+
+#tablaD-cont{
+    margin: 10px;
+    padding: 10px 40px 10px 40px;
+    font-family: 'Lucida Sans';
+}
+
+#btn-cont{
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Lucida Sans';
+    text-align: center;
+}
+
+input{
+    width: 80%;
+}
+
+button{
+    background: #009900;
+    width: 180px;
+}

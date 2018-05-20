@@ -7,20 +7,18 @@
 
 $('#izq-contenedor').click(function(e){
 	var id = e.target.id;
-	if (id=="btn-registrar") {
-		window.location.assign("../admin/registrarUsuario.html");
+	if (id=="btn-registrar-empleados") {
+		window.location.assign("../master/registrarEmpleados.html");
+		
+    }
+
+    if (id=="btn-bempleados") {
+		window.location.assign("../master/busquedaEmpleados.html");
     }
     if (id=="btn-inicio") {
-		window.location.assign("../admin/index.html");
+		window.location.assign("../master/index.html");
     }
 
-    if (id=="btn-busuario") {
-		window.location.assign("../admin/buscarUsuario.html");
-    }
-
-    if (id=="btn-archivo") {
-		window.location.assign("../admin/archivosPen.html");
-    }
 
     if (id=="btn-salir") {
 		swal({

@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html>
 <!--
   Nombre: Juda Alector Vallejo Herrera
-  Descripción: Pantalla principal para la vista del Administrador(empleado).
+  Descripción: Pantalla principal para la vista del master.
   Fecha: 22 de abril del 2018
 -->
 <head>
-  <title>Administrador</title>
+  <title>Master</title>
   <meta charset="utf-8">
   <link rel="shortcut icon" type="image/ico" href="../../img/main_ico.ico">
   <link rel="stylesheet" type="text/css" href="../../lib/animate.css">
@@ -33,7 +34,7 @@
         <ul class="navbar-nav mr-auto">
 
         </ul>
-        <p id="bar-usuario-nombre">Valentina Rojas</p>
+        <p id="bar-master-nombre">Valentina Rojas</p>
         <a>
           <img src="../../img/user.png" id="bar-usuario-imagen"></img>
         </a>
@@ -43,10 +44,9 @@
     <div class="container-fluid row" style="margin-top:30px">
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2"> 
-            <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
-            <button id="btn-registrar" type="button" class="btn boton-opcion">Registrar</button>
-            <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button>
-            <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button>
+            <script type="text/javascript" src="../../js/master/navegacion.js"></script>
+            <button id="btn-registrar-empleados" type="button" class="btn boton-opcion">Registrar empleado</button>
+            <button id="btn-bempleados" type="button" class="btn boton-opcion">Buscar empleado</button>
             <button id="btn-salir" type="button" class="btn boton-opcion">Salir</button>
 
       </div>

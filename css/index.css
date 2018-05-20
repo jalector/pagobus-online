@@ -1,0 +1,23 @@
+#img-leon{
+	margin-top:100px;
+	margin-bottom: 50px;
+	max-width: 100%;
+}
+
+#especial{
+	border-top: 5px #2e6f97 solid;
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	bottom: 0px;
+	background: #fff;
+	margin:0px;
+}
+
+body{
+	background-image: url("../img/main_background.jpg");
+	background-attachment: fixed;;
+}
+
+
+
