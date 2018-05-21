@@ -48,16 +48,7 @@ include('../../php/admin/session.php');
     <div class="container-fluid row" style="margin-top:30px">
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
-<<<<<<< HEAD:app/admin/registrarUsuario.php
-<<<<<<< HEAD
-          <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
-          <button id="btn-inicio" type="button" class="btn boton-opcion">Pagina Principal</button>  
-          <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button>
-          <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button>
-          <button id="btn-salir" type="button" class="btn boton-opcion">Salir</button>
-          <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
 
-=======
         <script type="text/javascript" src="../../js/admin/navegacion.js"></script>  
         <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal</button>
         <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button>
@@ -65,7 +56,6 @@ include('../../php/admin/session.php');
         <button id="btn-salir" type="button" class="btn boton-opcion">Salir
         <script type="text/javascript" src="../../js/Salir.js"></script>
         </button>
->>>>>>> b5c7d79dddb005a722b4c16d349204598e847be8:app/admin/registrarUsuario.html
       </div>
       <!-- Contenedor lateral derecho -->
       <div id="der-contenedor" class="col-md-9">
