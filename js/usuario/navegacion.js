@@ -8,7 +8,7 @@
 $('#izq-contenedor').click(function(e){
 	var id = e.target.id;
 	if (id=="btn-registrar") {
-		window.location.replace("../usuario/Actualizar_Datos.html");
+		window.location.replace("../usuario/Actualizar_Datos.php");
     }
 
     if (id=="btn-Vestado") {

@@ -15,15 +15,15 @@
         $.ajax({
             url: "../../php/admin/getUser.php",
             type: "POST",
+            dataType:'json',
             data:{
                 value: value,
                 type: type
             },success:function(data){
                 //Se colocan los datos en el contenedor para la tabla
-                console.log(JSON.parse(data))
                 $('#tablaUsuarios')
                     .empty()
-                    .append(createTable(JSON.parse(data)));
+                    .append(createTable(data));
             },failure:function(data){
                 console.err("No se pueden acutalizar los datos");
             }

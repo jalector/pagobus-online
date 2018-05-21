@@ -1,10 +1,18 @@
 <?php
+<<<<<<< HEAD
 	require('conexion.php');
 	if(empty($_SESSION['correo'])){
 	session_start();
 		?>
 
 
+=======
+include('login.php'); // Includes Login Script
+if(isset($_SESSION['login_user'])){
+	header("location: app/admin/index.php"); // Redirecting To Profile Page
+}
+?> 
+>>>>>>> b5c7d79dddb005a722b4c16d349204598e847be8
 <!DOCTYPE html>
 <html>
 <head>

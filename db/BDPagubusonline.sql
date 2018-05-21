@@ -63,7 +63,6 @@ constraint id_status foreign key (id_status) references Estado(id_status)
 create table Documento(
 id_Documento int not null auto_increment primary key,
 documento varchar(255) not null,
-institucion varchar(50) not null,
 f_actualizacion date,
 estado varchar(50) not null,
 id_usuario int not null,

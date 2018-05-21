@@ -23,7 +23,7 @@
                                             '".$nombre."',
                                             '".$apellido."',
                                             '".$fecha."',
-                                            'default',
+                                            '/img/user.png',
                                             '".$colonia."',
                                             '".$domicilio."',
                                             '".$correo."',
