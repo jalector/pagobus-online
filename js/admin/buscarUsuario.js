@@ -116,7 +116,13 @@
                 class: statusToColor(element.estado),
                 html: [
                     $('<th>', {html: element.id}),
-                    $('<td>', {html: element.nombre}),
+                    $('<td>', {html: [
+                        $("<a>", {
+                            html: element.nombre,
+                            href: "datosUsuario.php?idUser="+element.id
+                            
+                        })
+                    ]}),
                     $('<td>', {html: element.correo}),
                     $('<td>', {html: element.estado}),
                 ]

@@ -26,7 +26,6 @@ include('../../php/admin/session.php');
 
 <body>
 
-
   <div id="main-contenedor" class="container max-width">
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -61,7 +60,7 @@ include('../../php/admin/session.php');
       <!-- Contenedor lateral derecho -->
       <div id="der-contenedor" class="col-md-9">
           <!-- Contenedor para los datos-->
-            <div id="datos-cont">
+            <div id="datos-cont" data-id-usuario="<?php echo $_GET['idUser']; ?>" >
               <label for="txt_nombre">Nombre</label><br>
               <input type="text" id="txt_nombre" ><br>
 
