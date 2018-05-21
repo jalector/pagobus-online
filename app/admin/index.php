@@ -1,8 +1,6 @@
 <?php
-include('session.php');
-if(!isset($_SESSION['login_user'])){
-header("location: ../../index.php"); // Redirecting To Home Page
-}
+include('../../php/admin/session.php');
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,15 +29,15 @@ header("location: ../../index.php"); // Redirecting To Home Page
   <div id="main-contenedor" class="container max-width">
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="">
-        <img src="../../img/logo.png" id="bar-logo"></img>
-      </a>
+       <div>
+      <input type="image" alt="Home" src="../../img/logo.png" id="bar-logo">
+      </div>
 
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
 
         </ul>
-        <p id="bar-usuario-nombre">Valentina Rojas</p>
+        <p id="bar-usuario-nombre"><i><?php echo $login_session; ?></i></p>
         <a>
           <img src="../../img/user.png" id="bar-usuario-imagen"></img>
         </a>
@@ -49,24 +47,28 @@ header("location: ../../index.php"); // Redirecting To Home Page
     <div class="container-fluid row" style="margin-top:30px">
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2"> 
-            <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
+            <script type="text/javascript" src="../../js/admin/navegacion.js"></script>  
             <button id="btn-registrar" type="button" class="btn boton-opcion">Registrar</button>
+            <script type="text/javascript" src="../../js/admin/navegacion.js"></script> 
             <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button>
+            <script type="text/javascript" src="../../js/admin/navegacion.js"></script> 
             <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button>
-            <button id="btn-salir" type="button" class="btn boton-opcion">Salir</button>
-
+            <script type="text/javascript" src="../../js/admin/navegacion.js"></script> 
+            <button id="btn-salir" type="button" class="btn boton-opcion">Salir
+            <script type="text/javascript" src="../../js/Salir.js"></script>
+            </button>
       </div>
       <!-- Contenedor lateral derecho -->
       <div id="der-contenedor" class="col-md-9" >
-          <div class="jumbotron jumbotron-fluid">
-              <div class="container">
-                <h3 class="display-4">Bienvenido</h1>
-                <p class="lead">En la Dirección General de Movilidad, asumimos el compromiso de fomentar, promover y gestionar la movilidad no motorizada como medio de transporte producto, en específico la bicicleta</p>
-                <hr class="my-4">
-                <p>Con el sistema de pagobus podrás mirar, revizar y subir tus datos para poder tramitar tu tarjeta pagobus.</p>
-              </div>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h3 class="display-4">Bienvenido</h1>
+              <p class="lead">En la Dirección General de Movilidad, asumimos el compromiso de fomentar, promover y gestionar la movilidad no motorizada como medio de transporte público, en específico la bicicleta.</p>
+              <hr class="my-4">
+              <p>Con el sistema de pagobús podrás ver, revisar y subir tus datos para poder tramitar tu tarjeta pagobús.</p>
             </div>
-      </div>
+          </div>
+        </div>
 
     </div>
   </div>

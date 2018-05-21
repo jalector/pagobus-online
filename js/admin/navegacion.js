@@ -8,26 +8,26 @@
 $('#izq-contenedor').click(function(e){
 	var id = e.target.id;
 	if (id=="btn-registrar") {
-		window.location.replace("../admin/registrarUsuario.html");
+		window.location.replace("../../php/admin/registrarUsuario.php");
     }
     if (id=="btn-inicio") {
-		window.location.assign("../admin/index.html");
+		window.location.replace("../../php/admin/index.php");
     }
 
     if (id=="btn-busuario") {
-		window.location.replace("../admin/buscarUsuario.html");
+		window.location.replace("../../php/admin/buscarUsuario.php");
 	}
 		
 	if (id=="btn-principal") {
-		window.location.replace("../admin/index.html");
+		window.location.replace("../../php/admin/index.php");
 	}
 
     if (id=="btn-archivo") {
-		window.location.replace("../admin/archivosPen.html");
+		window.location.replace("../../php/admin/archivosPen.php");
     }
 
     });
 
 $('#bar-logo').click(function(e){
-	window.location.replace("../admin/index.html");
+	window.location.replace("../../php/admin/index.php");
 });

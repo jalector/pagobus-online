@@ -1,3 +1,7 @@
+<?php
+include('../../php/admin/session.php');
+
+?>
 <!DOCTYPE html>
 <html>
 <!--
@@ -34,7 +38,7 @@
         <ul class="navbar-nav mr-auto">
 
         </ul>
-        <p id="bar-usuario-nombre">Pablo Gallardo</p>
+        <p id="bar-usuario-nombre"><i><?php echo $login_session; ?></i></p>
         <a>
           <img src="../../img/user.png" id="bar-usuario-imagen"></img>
         </a>
@@ -51,15 +55,7 @@
           <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button>
           <button id="btn-salir" type="button" class="btn boton-opcion">Salir</button>
           <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
-=======
-        <script type="text/javascript" src="../../js/admin/navegacion.js"></script>  
-        <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal</button>
-        <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button>
-        <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button>
-        <button id="btn-salir" type="button" class="btn boton-opcion">Salir
-        <script type="text/javascript" src="../../js/Salir.js"></script>
-        </button>
->>>>>>> 18e6b1f2013edd1f6c1b5936a5ec9543917016b6
+
       </div>
       <!-- Contenedor lateral derecho -->
       <div id="der-contenedor" class="col-md-9">
