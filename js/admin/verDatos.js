@@ -19,7 +19,7 @@
     txtDomicilio = $('#txt_domicilio');
     txtStatus = $('#txt_status');
 
-    let id = '26';
+    let id = '1';
 
     //Realizamos la consulta de los datos y los agregamos a los campos correspondientes
     $.getJSON("../../php/admin/datosUser.php", {id: id}, function(usuarios){
