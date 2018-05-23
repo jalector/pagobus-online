@@ -49,11 +49,14 @@ include('../../php/admin/session.php');
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
           <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
-          <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal</button>
-          <button id="btn-registrar" type="button" class="btn boton-opcion">Registrar</button>
-          <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button>
+          <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
+          <button id="btn-registrar" type="button" class="btn boton-opcion">Registrar
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
+          <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
           <button id="btn-salir" type="button" class="btn boton-opcion">Salir
-              <script type="text/javascript" src="../../js/Salir.js"></script></button>
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
           </button>
           
       </div>

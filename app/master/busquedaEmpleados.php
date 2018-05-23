@@ -1,3 +1,7 @@
+<?php
+include('../../session.php');
+
+?>
 <!DOCTYPE html>
 <html>
 <!--
@@ -34,7 +38,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
         </ul>
-        <p id="bar-master-nombre">Valentina Rojas</p>
+        <p id="bar-master-nombre"><i><?php echo $login_session; ?></p>
         <a>
           <img src="../../img/user.png" id="bar-usuario-imagen"></img>
         </a>
@@ -45,11 +49,12 @@
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
         <script type="text/javascript" src="../../js/master/navegacion.js"></script>
-        <button id="btn-reg" type="button" class="btn boton-opcion">Registrar empleado</button>
-        <button id="btn-bus" type="button" class="btn boton-opcion">Buscar empleado</button>
+        <button id="btn-reg" type="button" class="btn boton-opcion">Registrar empleado
+        <script type="text/javascript" src="../../js/master/navegacion.js"></script></button>
+        <button id="btn-bus" type="button" class="btn boton-opcion">Buscar empleado
+        <script type="text/javascript" src="../../js/master/navegacion.js"></script></button>
         <button id="btn-salir" type="button" class="btn boton-opcion">Salir
-        <script type="text/javascript" src="../../js/Salir.js"></script>
-        </button>
+        <script type="text/javascript" src="../../js/master/navegacion.js"></script></button>
       </div>
 
       <!-- Contenedor lateral derecho -->

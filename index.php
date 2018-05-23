@@ -1,11 +1,10 @@
 <?php
-include('validar3.php'); // Includes Login Script
-if(isset($_SESSION['login_user'])){
-	header("location: app/admin/index.php"); // Redirecting To Profile Page
-}else{
-	//print 'Bienvenido'.$_SESSION['correo'].'<br> <p><a href= "cerrar.php">Cerrar Sesion</a></p>';
-}
-?> 
+	require('conexion.php');
+	if(empty($_SESSION['nombre'])){
+	session_start();
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +29,7 @@ if(isset($_SESSION['login_user'])){
 
 	<!-- Incio -->
 	<div id="login-form" class="container col-md-4 text-center animated bounceInRight">
-		<form action="validar3.php" method="POST" enctype="application/x-www-form-urlencoded">
+		<form action="loginPHP/validar.php" method="POST" enctype="application/x-www-form-urlencoded">
 			<h2>Pagobús Online</h2>
 			<div  class="form-group">
 				<input class="form-control" name="correo" placeholder="Email" type='email' required=""></input>				

@@ -1,4 +1,7 @@
+<?php
+include('../../session.php');
 
+?>
 <!DOCTYPE html>
 <html>
 <!--
@@ -35,7 +38,7 @@
         <ul class="navbar-nav mr-auto">
 
         </ul>
-        <p id="bar-usuario-nombre">Angel Hernández</p>
+        <p id="bar-usuario-nombre"><i><?php echo $login_session; ?></p>
         <a>
           <img src="../../img/user.png" id="bar-usuario-imagen"></img>
         </a>
@@ -55,7 +58,7 @@
               <script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
           </button>
           <button id="btn-salir" type="button" class="btn boton-opcion">Salir
-              <script type="text/javascript" src="../../js/Salir.js"></script>
+              <script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
           </button>
 
       </div>

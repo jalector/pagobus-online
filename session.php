@@ -8,8 +8,8 @@ session_start();// Starting Session
 $user_check = $_SESSION['login_user'];
 
 // SQL Query To Fetch Complete Information Of User
-$query = "SELECT correo from empleado where correo = '$user_check'";
+$query = "SELECT * from empleado where correo = '$user_check'";
 $ses_sql = mysqli_query($conn, $query);
 $row = mysqli_fetch_assoc($ses_sql);
-$login_session = $row['correo'];
+$login_session = $row['nombre'];
 ?>

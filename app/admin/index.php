@@ -55,7 +55,7 @@ include('../../php/admin/session.php');
             <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button>
             <script type="text/javascript" src="../../js/admin/navegacion.js"></script> 
             <button id="btn-salir" type="button" class="btn boton-opcion">Salir
-            <script type="text/javascript" src="../../js/Salir.js"></script>
+            <script type="text/javascript" src="../../js/admin/navegacion.js"></script></script>
             </button>
       </div>
       <!-- Contenedor lateral derecho -->
