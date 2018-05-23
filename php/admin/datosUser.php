@@ -13,8 +13,8 @@
 
     //Consulta a ejecutar
     $consulta = "SELECT u.nombre, u.apellido, u.f_nacimiento as fecha, u.colonia, u.domicilio, e.tipo_estado as estado
-    FROM usuario u JOIN estado e ON u.id_Status = e.id_status
-    WHERE u.id_usuario = ".$id.";";
+    FROM Usuario u JOIN Estado e ON u.id_Status = e.id_status
+    WHERE u.id_Usuario = ".$id.";";
 
     $resultado = $conexion->query($consulta);
     $respuesta = array();

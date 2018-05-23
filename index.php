@@ -1,10 +1,18 @@
 <?php
+<<<<<<< HEAD
 	require('conexion.php');
 	if(empty($_SESSION['nombre'])){
 	session_start();
 		?>
 
 
+=======
+include('login.php'); // Includes Login Script
+if(isset($_SESSION['login_user'])){
+	header("location: app/admin/index.php"); // Redirecting To Profile Page
+}
+?> 
+>>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +37,11 @@
 
 	<!-- Incio -->
 	<div id="login-form" class="container col-md-4 text-center animated bounceInRight">
+<<<<<<< HEAD
 		<form action="loginPHP/validar.php" method="POST" enctype="application/x-www-form-urlencoded">
+=======
+		<form action="validar3.php" method="POST" enctype="application/x-www-form-urlencoded">
+>>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422
 			<h2>Pagobús Online</h2>
 			<div  class="form-group">
 				<input class="form-control" name="correo" placeholder="Email" type='email' required=""></input>				
@@ -61,5 +73,9 @@
 </html>
 <?php
 }else{
+<<<<<<< HEAD
 	print 'Bienvenido'.$_SESSION['nombre'].'<br> <p><a href= "cerrar.php">Cerrar Sesion</a></p>';
+=======
+	print 'Bienvenido'.$_SESSION['correo'].'<br> <p><a href= "cerrar.php">Cerrar Sesion</a></p>';
+>>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422
 }
