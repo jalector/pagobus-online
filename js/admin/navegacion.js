@@ -8,7 +8,6 @@
 $('#izq-contenedor').click(function(e){
 	var id = e.target.id;
 	if (id=="btn-registrar") {
-<<<<<<< HEAD
 		window.location.replace("../../app/admin/registrarUsuario.php");
     }
     if (id=="btn-inicio") {
@@ -25,30 +24,11 @@ $('#izq-contenedor').click(function(e){
 
     if (id=="btn-archivo") {
 		window.location.replace("../../app/admin/archivosPen.php");
-=======
-		window.location.replace("../../php/admin/registrarUsuario.php");
-    }
-    if (id=="btn-inicio") {
-		window.location.replace("../../php/admin/index.php");
-    }
-
-    if (id=="btn-busuario") {
-		window.location.replace("../../php/admin/buscarUsuario.php");
-	}
-		
-	if (id=="btn-principal") {
-		window.location.replace("../../php/admin/index.php");
-	}
-
-    if (id=="btn-archivo") {
-		window.location.replace("../../php/admin/archivosPen.php");
->>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422
     }
 
     });
 
 $('#bar-logo').click(function(e){
-<<<<<<< HEAD
 	window.location.replace("../../app/admin/index.php");
 });
 $('#btn-salir').click(function(e){
@@ -65,7 +45,3 @@ $('#btn-salir').click(function(e){
 			} 
 		});
 	});
-=======
-	window.location.replace("../../php/admin/index.php");
-});
->>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422

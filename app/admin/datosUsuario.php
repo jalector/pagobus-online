@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD:app/admin/datosUsuario.php
-include('../../session.php');
-=======
 include('../../php/admin/session.php');
->>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422:app/admin/datosUsuario.php
 
 ?>
 <!DOCTYPE html>
@@ -52,24 +48,12 @@ include('../../php/admin/session.php');
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
           <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
-<<<<<<< HEAD:app/admin/datosUsuario.php
-          <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal
-          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
-          <button id="btn-registrar" type="button" class="btn boton-opcion">Registrar
-          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
-          <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario
-          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
-          <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos
-          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
-          <button id="btn-salir" type="button" class="btn boton-opcion">Salir</script>  
-=======
           <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal</button>
           <button id="btn-registrar" type="button" class="btn boton-opcion">Registrar</button>
           <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button>
           <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button>
           <button id="btn-salir" type="button" class="btn boton-opcion">Salir
           <script type="text/javascript" src="../../js/Salir.js"></script>  
->>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422:app/admin/datosUsuario.php
           </button>
 
       </div>

@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD:app/admin/archivosPen.php
-include('../../session.php');
-=======
 include('../../php/admin/session.php');
->>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422:app/admin/archivosPen.php
 
 ?>
 <!DOCTYPE html>
