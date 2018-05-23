@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD:app/admin/archivosPen.php
+include('../../session.php');
+=======
 include('../../php/admin/session.php');
+>>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422:app/admin/archivosPen.php
 
 ?>
 <!DOCTYPE html>
@@ -38,7 +42,7 @@ include('../../php/admin/session.php');
         <ul class="navbar-nav mr-auto">
 
         </ul>
-        <p id="bar-usuario-nombre">Pablo Gallardo</p>
+        <p id="bar-usuario-nombre"><i><?php echo $login_session; ?></p>
         <a>
           <img src="../../img/user.png" id="bar-usuario-imagen"></img>
         </a>
@@ -49,11 +53,14 @@ include('../../php/admin/session.php');
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
           <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
-          <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal</button>
-          <button id="btn-registrar" type="button" class="btn boton-opcion">Registrar</button>
-          <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button>
+          <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
+          <button id="btn-registrar" type="button" class="btn boton-opcion">Registrar
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
+          <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
           <button id="btn-salir" type="button" class="btn boton-opcion">Salir
-              <script type="text/javascript" src="../../js/Salir.js"></script></button>
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
           </button>
           
       </div>

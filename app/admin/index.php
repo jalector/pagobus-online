@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
+include('../../session.php');
+=======
 include('../../php/admin/session.php');
+>>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422
 
 ?>
 <!DOCTYPE html>
@@ -55,7 +59,11 @@ include('../../php/admin/session.php');
             <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos</button>
             <script type="text/javascript" src="../../js/admin/navegacion.js"></script> 
             <button id="btn-salir" type="button" class="btn boton-opcion">Salir
+<<<<<<< HEAD
+            <script type="text/javascript" src="../../js/admin/navegacion.js"></script></script>
+=======
             <script type="text/javascript" src="../../js/Salir.js"></script>
+>>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422
             </button>
       </div>
       <!-- Contenedor lateral derecho -->

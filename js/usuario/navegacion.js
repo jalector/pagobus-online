@@ -12,11 +12,25 @@ $('#izq-contenedor').click(function(e){
     }
 
     if (id=="btn-Vestado") {
-		window.location.replace("../usuario/Ver_Estado.html");
+		window.location.replace("../usuario/Ver_Estado.php");
     }
 
     });
 
 $('#bar-logo').click(function(e){
-	window.location.replace("../usuario/index.html");
+	window.location.replace("../usuario/index.php");
 });
+$('#btn-salir').click(function(e){
+        swal({
+            title: "¿Está seguro de que desea salir?",
+            text: "Una vez presionado 'OK' tendrá que volver a loguearse",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+        .then((willDelete) => {
+            if (willDelete) {
+                window.location.replace("../../index.php")
+            } 
+        });
+    });

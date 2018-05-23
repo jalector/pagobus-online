@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD:app/admin/registrarUsuario.php
+include('../../session.php');
+=======
 include('../../php/admin/session.php');
+>>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422:app/admin/registrarUsuario.php
 
 ?>
 <!DOCTYPE html>
@@ -48,6 +52,18 @@ include('../../php/admin/session.php');
     <div class="container-fluid row" style="margin-top:30px">
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
+<<<<<<< HEAD:app/admin/registrarUsuario.php
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script>
+          <button id="btn-inicio" type="button" class="btn boton-opcion">Pagina Principal
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>  
+          <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
+          <button id="btn-archivo" type="button" class="btn boton-opcion">Archivos
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
+          <button id="btn-salir" type="button" class="btn boton-opcion">Salir
+          <script type="text/javascript" src="../../js/admin/navegacion.js"></script></button>
+
+=======
 
         <script type="text/javascript" src="../../js/admin/navegacion.js"></script>  
         <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal</button>
@@ -56,6 +72,7 @@ include('../../php/admin/session.php');
         <button id="btn-salir" type="button" class="btn boton-opcion">Salir
         <script type="text/javascript" src="../../js/Salir.js"></script>
         </button>
+>>>>>>> 87bed4ae1b718828213caf0bc7740f9c9973a422:app/admin/registrarUsuario.php
       </div>
       <!-- Contenedor lateral derecho -->
       <div id="der-contenedor" class="col-md-9">
