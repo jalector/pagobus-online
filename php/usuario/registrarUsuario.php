@@ -1,4 +1,11 @@
 <?php
+    /**
+     * Nombre: Juda Alector Vallejo Herrera
+     * Descripción: archivo que nos permite actualizar los datos.
+     * Fecha: 20 de Mayo del 2018
+     */
+
+    //Nos permite trabajar en base de datos.
     include "../conexion.php";
     $conexion = conectar();
     $id =  $_POST["input-id"];
@@ -57,6 +64,4 @@
     function upload($file, $location, $name){
         move_uploaded_file($file["tmp_name"], $location.$name);
     }
-                    
-                    
 ?>
