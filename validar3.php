@@ -8,9 +8,9 @@ if (empty($_POST['correo']) || empty($_POST['contrasena'])) {
 }
 else
 {
-// Define $correo and $contraseña
+// Define $correo and $password
 $correo = $_POST['correo'];
-$contraseña = $_POST['contrasena'];
+$password = $_POST['contrasena'];
 
 // mysqli_connect() function opens a new connection to the MySQL server.
 $conn = mysqli_connect("localhost", "root", "", "pagobusonline");
@@ -20,9 +20,9 @@ $query = "SELECT correo, contrasena from empleado where correo=? AND contrasena=
 
 // To protect MySQL injection for Security purpose
 $stmt = $conn->prepare($query);
-$stmt->bind_param("ss", $correo, $contraseña);
+$stmt->bind_param("ss", $correo, $password);
 $stmt->execute();
-$stmt->bind_result($correo, $contraseña);
+$stmt->bind_result($correo, $password);
 $stmt->store_result();
 
 if($stmt->fetch()) //fetching the contents of the row
@@ -31,7 +31,7 @@ if($stmt->fetch()) //fetching the contents of the row
           header("location: app/admin/index.php"); // Redirecting To Profile Page
         }
 else {
-       $error = "Correo o contraseña invalidos";
+       $error = "Username or Password is invalid";
      }
 mysqli_close($conn); // Closing Connection
 }

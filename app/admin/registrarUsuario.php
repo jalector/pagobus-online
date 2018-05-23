@@ -1,3 +1,7 @@
+<?php
+include('../../php/admin/session.php');
+
+?>
 <!DOCTYPE html>
 <html>
 <!--
@@ -34,7 +38,7 @@
         <ul class="navbar-nav mr-auto">
 
         </ul>
-        <p id="bar-usuario-nombre">Pablo Gallardo</p>
+        <p id="bar-usuario-nombre"><i><?php echo $login_session; ?></i></p>
         <a>
           <img src="../../img/user.png" id="bar-usuario-imagen"></img>
         </a>
@@ -44,6 +48,7 @@
     <div class="container-fluid row" style="margin-top:30px">
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
+
         <script type="text/javascript" src="../../js/admin/navegacion.js"></script>  
         <button id="btn-principal" type="button" class="btn boton-opcion">Pagina Principal</button>
         <button id="btn-busuario" type="button" class="btn boton-opcion">Buscar usuario</button>
@@ -96,17 +101,18 @@
             <!--Boton para realizar el registro-->
                <button id="btn-guardar" type="button" class="btn btn-formulario">Registrar Usuario
                </button>
-               <script src="../../js/admin/registrarUsuario.js"></script>
+               
           </div>
           <!--Contenedor para ingresar la imagen del usuario-->
           <div id="img-usr">
             <br><br><br><br>
-              <img src="../../img/user.png" class="rounded mx-auto d-block"><br>
-              <input type="file" id="Archivo">
+            <img id="imagen-s" src="../../img/user.png" class="rounded mx-auto d-block"><br>
+            <input type="file" id="file" name="files[]"/>
           </div>
       </div>
     </div>
   </div>
+  <script src="../../js/admin/registrarUsuario.js"></script>
 </body>
 
 </html>

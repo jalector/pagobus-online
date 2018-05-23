@@ -4,14 +4,14 @@
      * Descripción: Función para obtener la conexión a la base de datos.
      * Fecha: 11 de Mayo del 2018
      */
-    function conectar(){        
+           
         $user = "root";
         $password = "";
         $dbname = "pagobusonline";
         $host = "localhost";
         $conexion = new mysqli($host, $user, $password, $dbname) or die("Conexión fallida: ".pg_last_error());
         return $conexion;
-    }
+    
 
     /**
      * Nombre: Judá Alector Vallejo Herrera 

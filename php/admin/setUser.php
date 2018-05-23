@@ -17,7 +17,13 @@
     $domicilio = $_POST['domicilio'];
     $correo = $_POST['correo'];
 
-    //Consulta a ejecutar
+    //Consulta a ejecutar para agregar el estado
+    $consulta = "insert into Estado values(null, 'pendiente', curdate(), 1);";
+
+    //Ejecutamos la consulta
+    $conexion->query($consulta);
+
+    //Consulta a ejecutar Para agregar un nuevo usuario
     $consulta = "insert into Usuario values(null,
                                             '".$contra."',
                                             '".$nombre."',
@@ -33,6 +39,11 @@
 
     //Ejecutamos la consulta
     $conexion->query($consulta);
+
+    $consulta = "UPDATE usuario SET usuario.id_Status = usuario.id_usuario where usuario.correo = '".$correo."';";
+
+//Ejecutamos la consulta
+$conexion->query($consulta);
 
     //Cerramos la conexión.
     $conexion->close();

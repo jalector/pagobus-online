@@ -15,7 +15,7 @@ $('#btn-salir').click(function(e){
 		})
 		.then((willDelete) => {
 			if (willDelete) {
-				window.location.replace("../../index.html")
+				window.location.replace("../../index.php")
 			} 
 		});
 	});

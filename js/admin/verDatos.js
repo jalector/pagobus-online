@@ -19,7 +19,7 @@
     txtDomicilio = $('#txt_domicilio');
     txtStatus = $('#txt_status');
 
-    let id = '1';
+    let id = $("#datos-cont").attr('data-id-usuario');
 
     //Realizamos la consulta de los datos y los agregamos a los campos correspondientes
     $.getJSON("../../php/admin/datosUser.php", {id: id}, function(usuarios){
@@ -41,7 +41,6 @@
             id: id
         },success:function(data){
             //Se colocan los datos en el contenedor para la tabla
-            console.log(JSON.parse(data))
             $('#tablaD-cont')
                 .empty()
                 .append(createTable(JSON.parse(data)));

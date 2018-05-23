@@ -1,4 +1,4 @@
-##################################################################################
+﻿##################################################################################
 ################### Pagobus Online Base de datos prueba ##########################
 ##################################################################################
 
@@ -91,4 +91,12 @@ insert into Usuario values(null, '123asdZXC', 'Sandra', 'Juarez', '19970110', 'd
 insert into Usuario values(null, '123asdZXC', 'Juan', 'Calsada', '19920101', 'default', 'Cumbres de Arbide', 'Corambo #439', 'juan_30@hotmail.com', null, 3, 17);
 insert into Usuario values(null, '123asdZXC', 'Jorge', 'Feliz', '20030123', 'default', 'Colinas de Plata', 'Cofre De Perote #218', 'jorge_53@hotmail.com', null, 3, 18);
 insert into Usuario values(null, '123asdZXC', 'Patricia', 'Hernández', '20010701', 'default', 'Acrópolis', 'El Maguey #1643', 'patricia_39@hotmail.com', null, 3, 19);
-insert into Usuario values(null, '123asdZXC', 'André', 'Montesillo', '19940908', 'default', 'Bellavista', 'Del Polen #1446', 'andré_20@hotmail.com', null, 3, 20); 
+insert into Usuario values(null, '123asdZXC', 'André', 'Montesillo', '19940908', 'default', 'Bellavista', 'Del Polen #1446', 'andré_20@hotmail.com', null, 3, 20);
+
+
+
+ -- Insertamos los usuarios Master
+insert into master values(null, 'Angel', 'Hernandez', 19, 'Country del Lago', 'Convento Del Caudete #258','angelH_121@hotmail.com', '123asdZXC', 3);
+insert into master values(null, 'Pablo', 'Gallardo', 20, 'Complejo La Cima', 'Armadillo #2121', 'jpg_182@hotmail.com', '123asdZXC', 3);
+insert into master values(null, 'Valentina', 'Rojas', 21, 'Chulavista Pro Vivienda Obrera', 'Banano #1470', 'vale040413@hotmail.com', '123asdZXC', 3);
+insert into master values(null, 'Juda', 'Vallejo', 20, 'Barretos', 'Cobre De San José #1909', 'judaalector_23@hotmail.com', '123asdZXC', 3);
