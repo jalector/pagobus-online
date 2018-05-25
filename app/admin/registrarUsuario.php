@@ -105,9 +105,9 @@ include('../../php/admin/session.php');
           </div>
           <!--Contenedor para ingresar la imagen del usuario-->
           <div id="img-usr">
-            <br><br><br><br>
+            
             <img id="imagen-s" src="../../img/user.png" class="rounded mx-auto d-block"><br>
-            <input type="file" id="file" name="files[]"/>
+            <input id="file" type="file" />
           </div>
       </div>
     </div>
