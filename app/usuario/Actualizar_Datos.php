@@ -59,7 +59,7 @@ include('../../session.php');
               <script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
           </button>
           <button id="btn-salir" type="button" class="btn boton-opcion">Salir
-<script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
+          <script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
           </button>
         </div>
         <!-- Contenedor lateral derecho -->
