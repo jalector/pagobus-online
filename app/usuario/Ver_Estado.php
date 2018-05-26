@@ -50,50 +50,33 @@ include('../../session.php');
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
           <button id="btn-registrar" type="button" class="btn boton-opcion">Actualizar datos
-              <script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
           </button>
           <button id="btn-solicitabaja" type="button" class="btn boton-opcion">Solicitar baja
-            <script type="text/javascript" src="../../js/usuario/Modal.js"></script>
           </button>
           <button id="btn-Vestado" type="button" class="btn boton-opcion">Ver estado
-              <script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
           </button>
           <button id="btn-salir" type="button" class="btn boton-opcion">Salir
-              <script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
           </button>
       </div>
       <!-- Contenedor lateral derecho -->
       <div id="der-contenedor" class="col-md-9" >
-                  <div class="form-group ">
-                    <br>
-           <center><h3>Estado Actual</h3></center>
-          </div>
-        <form id="formulario">
           <div class="form-group ">
-          </div>
-          <div class="form-group ">
-            <label id="lbl-nombre" class="label offset-md-1"><b>Nombre(s): </b>Angel</label>
-          </div>
-          <div class="form-group ">
-            <label id="lbl-apellidos" class="label offset-md-1"><b>Apellido(s): </b>Hernández Rivera</label>
-          </div>
-          <div class="form-group ">
-            <label id="lbl-fnacimiento" class="label offset-md-1"><b>Fecha de nacimiento: </b>08/11/1997</label>
-          </div>
-          <div class="form-group ">
-            <label id="lbl-correo" class="label offset-md-1"><b>Email: </b>angelhr0811@gmail.com</label>
-          </div>
-          <div class="form-group ">
-            <label id="lbl-domicilio" class="label offset-md-1"><b>Domicilio: </b>Camelinas 879</label>
-          </div>
-          <div class="form-group ">
-            <label id="lbl-estado" class="label offset-md-1"><b>Estado de la solicitud: </b>Solicitud aceptada</label>
-          </div>
+        <center><h3>Estado Actual</h3></center>
+        </div>
+        <!-- Imagen de Usuario -->
+          <img id="lbl-profile-image" src="../../img/user.png" class="rounded-circle mx-auto d-block img-thumbnail mb-1">
+          <div class="custom-file col-md-4 offset-md-4 mb-3"></div>
+        <form id="formulario-estado">
+          <?php
+          include '../../php/usuario/getEstado.php';
+          ?>
         </form>
       </div>
 
     </div>
   </div>
+  <script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
+  <script type="text/javascript" src="../../js/usuario/Modal.js"></script>
 </body>
 
 </html>

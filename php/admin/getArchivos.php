@@ -12,7 +12,7 @@
     $estado = $_POST['estado'];
     //Consulta a ejecutar
     $consulta = "
-    select u.id_usuario as id, d.documento as documento, concat(u.nombre, ' ', u.apellido)as nombre, d.estado as estado
+    select d.id_Documento as id, d.documento as documento, concat(u.nombre, ' ', u.apellido)as nombre, d.estado as estado
     from usuario u JOIN documento d ON u.id_usuario = d.id_usuario 
     WHERE d.estado = '".$estado."';";
     

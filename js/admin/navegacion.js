@@ -31,6 +31,7 @@ $('#izq-contenedor').click(function(e){
 $('#bar-logo').click(function(e){
 	window.location.replace("../../app/admin/index.php");
 });
+
 $('#btn-salir').click(function(e){
 		swal({
 			title: "¿Está seguro de que desea salir?",

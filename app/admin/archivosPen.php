@@ -38,7 +38,7 @@ include('../../php/admin/session.php');
         <ul class="navbar-nav mr-auto">
 
         </ul>
-        <p id="bar-usuario-nombre"><i><?php echo $login_session; ?></p>
+        <p id="bar-usuario-nombre"><i><?php echo $login_session; ?></i></p>
         <a>
           <img src="../../img/user.png" id="bar-usuario-imagen"></img>
         </a>

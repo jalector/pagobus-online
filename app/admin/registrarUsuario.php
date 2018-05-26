@@ -101,17 +101,18 @@ include('../../php/admin/session.php');
             <!--Boton para realizar el registro-->
                <button id="btn-guardar" type="button" class="btn btn-formulario">Registrar Usuario
                </button>
-               <script src="../../js/admin/registrarUsuario.js"></script>
+               
           </div>
           <!--Contenedor para ingresar la imagen del usuario-->
           <div id="img-usr">
             <br><br><br><br>
-              <img src="../../img/user.png" class="rounded mx-auto d-block"><br>
-              <input type="file" id="Archivo">
+            <img id="imagen-s" src="../../img/user.png" class="rounded mx-auto d-block"><br>
+            <input type="file" id="file" name="files[]"/>
           </div>
       </div>
     </div>
   </div>
+  <script src="../../js/admin/registrarUsuario.js"></script>
 </body>
 
 </html>
