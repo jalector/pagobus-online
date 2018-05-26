@@ -69,15 +69,3 @@ id_usuario int not null,
 constraint id_usuario foreign key (id_usuario) references Usuario(id_usuario)
 );
 
-create table Master(
-id_master int not null auto_increment primary key,
-nombre varchar(50) not null,
-apellido varchar(50) not null,
-edad int not null,
-colonia varchar(50) not null,
-domicilio varchar(100) not null,
-correo varchar(50) not null,
-contrasena varchar(50) not null,
-id_tipoUsuario int not null,
-constraint id_TipoUsuarioM foreign key (id_TipoUsuario) references TipoUsuario(id_TipoUsuario)
-);

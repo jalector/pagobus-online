@@ -96,7 +96,7 @@ insert into Usuario values(null, '123asdZXC', 'André', 'Montesillo', '19940908'
 
 
  -- Insertamos los usuarios Master
-insert into master values(null, 'Angel', 'Hernandez', 19, 'Country del Lago', 'Convento Del Caudete #258','angelH_121@hotmail.com', '123asdZXC', 3);
-insert into master values(null, 'Pablo', 'Gallardo', 20, 'Complejo La Cima', 'Armadillo #2121', 'jpg_182@hotmail.com', '123asdZXC', 3);
-insert into master values(null, 'Valentina', 'Rojas', 21, 'Chulavista Pro Vivienda Obrera', 'Banano #1470', 'vale040413@hotmail.com', '123asdZXC', 3);
-insert into master values(null, 'Juda', 'Vallejo', 20, 'Barretos', 'Cobre De San José #1909', 'judaalector_23@hotmail.com', '123asdZXC', 3);
+insert into Empleado values(null, 'Angel', 'Hernandez', 19, 'Country del Lago', 'Convento Del Caudete #258','angelH_121@hotmail.com', '123asdZXC', 3);
+insert into Empleado values(null, 'Pablo', 'Gallardo', 20, 'Complejo La Cima', 'Armadillo #2121', 'jpg_182@hotmail.com', '123asdZXC', 3);
+insert into Empleado values(null, 'Valentina', 'Rojas', 21, 'Chulavista Pro Vivienda Obrera', 'Banano #1470', 'vale040413@hotmail.com', '123asdZXC', 3);
+insert into Empleado values(null, 'Juda', 'Vallejo', 20, 'Barretos', 'Cobre De San José #1909', 'judaalector_23@hotmail.com', '123asdZXC', 3);
