@@ -64,7 +64,7 @@
             tb.append($('<tr>',{
                 class: 'table-warning',
                 html: [
-                    $('<th>', {html: element.id}),
+                    $('<td>', {html: element.id}),
                     $('<td>', {html: element.documento}),
                     $('<td>', {html: element.nombre}),
                     $('<td>', {html: element.estado}),
