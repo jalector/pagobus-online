@@ -78,7 +78,7 @@
               </tr>
               <tr>
                   <td><label for="txt_fechaNa">Fecha de nacimiento</label></td> 
-                  <td><input type="date" id="txt_fechaNa"></td>            
+                  <td><input type="text" id="txt_fechaNa"></td>            
               </tr>
               <tr>
                   <td> <label for="txt_correo">Correo</label></td> 

@@ -78,10 +78,10 @@
         </div>
         <!-- Imagen de Usuario -->
            <?php 
-          $nombre_fichero = '../../resources/profile-img/img1.jpg';
+          $nombre_fichero = '../../resources/profile-img/1.jpg';
             if (file_exists($nombre_fichero)) {
           printf("
-          <img id='lbl-profile-imageE' src='../../resources/profile-img/img1.jpg' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
+          <img id='lbl-profile-imageE' src='../../resources/profile-img/1.jpg' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
           onclick='abrirSelector()'>");
           } else {
              printf("

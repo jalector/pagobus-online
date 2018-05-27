@@ -77,8 +77,12 @@
                   <td><input type="text" id="txt_apellido"></td>            
               </tr>
               <tr>
-                  <td><label for="txt_fechaNa">Fecha de nacimiento</label></td> 
-                  <td><input type="text" id="txt_fechaNa"></td>            
+                  <td><label for="txt_edad">Edad</label></td> 
+                  <td><input type="text" id="txt_edad"></td>            
+              </tr>
+              <tr>
+                  <td><label for="txt_fechaCo">Fecha de contratacion</label></td> 
+                  <td><input type="text" id="txt_fechaCo"></td>            
               </tr>
               <tr>
                   <td> <label for="txt_correo">Correo</label></td> 
@@ -102,14 +106,19 @@
               </tr>
             </table>
             <!--Boton para realizar el registro-->
-               <button id="btn-aceptar" type="button" class="btn btn-formulario">Registrar Empleado
+               <button id="btn-guardar" type="button" class="btn btn-formulario">Registrar Usuario
                </button>
-            
+               
           </div>
-
+          <!--Contenedor para ingresar la imagen del usuario-->
+          <div id="img-usr">
+            
+            <img id="imagen-s" src="../../img/user.png" class="rounded mx-auto d-block"><br>
+            <input id="file" type="file" />
+          </div>
       </div>
     </div>
   </div>
+  <script src="../../js/master/registrarEmpleado.js"></script>
 </body>
-
 </html>
