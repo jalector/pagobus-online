@@ -1,6 +1,9 @@
-<?php
-include('../../session.php');
-
+<?php 
+    include '../../php/login/session.php';
+    session_start();
+    if(!checkPermission($_SESSION['tipo'])){
+      header("Location: ../server-errors/error_404.html");
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,10 +27,7 @@ include('../../session.php');
 
 
 </head>
-
 <body>
-
-
   <div id="main-contenedor" class="container max-width">
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -36,9 +36,8 @@ include('../../session.php');
       </div>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-
         </ul>
-        <p id="bar-usuario-nombre"><i><?php echo $login_session; ?></p>
+        <p id="bar-usuario-nombre"> <?php echo $_SESSION['nombre']; ?></p>
         <a>
           <img src="../../img/user.png" id="bar-usuario-imagen"></img>
         </a>

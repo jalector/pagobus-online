@@ -29,17 +29,56 @@
             <div class="form-group">
                <input class="form-control" name ="contrasena" placeholder="Contraseña" type="password" required=""></input>
             </div>
+            <div class="alert alert-danger animated bounce delay-2" role="alert" <?php if($_GET['error'] != 1){ echo "hidden"; }?>>
+                  Usuario o contraseña incorrecto
+            </div>	
             <div class="row text-center">
                <button type="submit" class="btn btn-success col-md-4 offset-md-1">Iniciar sesión</button>
+               <button type="button" class="btn btn-info col-md-4 offset-md-2"  data-toggle="modal" data-target="#registro-modal"> Registrarme</button>
+            </div>
          </form>
-         <button type="button" class="btn btn-info col-md-4 offset-md-2"  data-toggle="modal" data-target="#registro-modal"> Registrarme</button>
-         <br/>
-         </div>
-         </form>		
+         
       </div>
-      </div>
-      </div>
-      </div>
-      </div>
+
+        <!-- Registro --> 
+      <div class="modal fade" id="registro-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> 
+            <div class="modal-dialog modal-dialog-centered" role="document"> 
+                  <div class="modal-content"> 
+                        <div class="modal-header"> 
+                              <h5 class="modal-title" id="exampleModalLongTitle">Registra tus datos</h5> 
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                                    <span aria-hidden="true">&times;</span> 
+                              </button> 
+                        </div> 
+                        <div class="modal-body text-center"> 
+                              <form> 
+                                    <div class="form-group"> 
+                                          <img src="img/index/leyenda_pagobus.png" style="max-width:100%;"> 
+                                    </div> 
+                                    <div class="form-group"> 
+                                          <input class="form-control" placeholder="Nombre(s)" type='text'></input> 
+                                    </div> 
+                                    <div class="form-group"> 
+                                          <input class="form-control" placeholder="Apellido(s)" type='text'></input> 
+                                    </div> 
+                                    <div class="form-group"> 
+                                          <input class="form-control" placeholder="Email" type="email"></input> 
+                                    </div> 
+                                    <div class="form-group"> 
+                                          <input class="form-control" placeholder="Contraseña" type="password"></input> 
+                                    </div> 
+                                    <div class="form-group"> 
+                                          <input class="form-control" placeholder="Confirme su contraseña" type="password"></input> 
+                                    </div> 
+                                          <div class="row text-center">         
+                                    </div> 
+                              </form>   
+                        </div> 
+                        <div class="modal-footer"> 
+                              <button type="submit" class="btn btn-success">Entrar</button> 
+                        </div> 
+                  </div> 
+            </div> 
+      </div> 
    </body>
 </html>

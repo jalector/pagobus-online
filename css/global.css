@@ -59,3 +59,7 @@ body{
     width: 130px;
     background-color: #169bd5;
 }
+
+.delay-2{
+    animation-delay: 2.5s;
+}
