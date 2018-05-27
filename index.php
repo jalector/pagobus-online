@@ -60,7 +60,7 @@
                                           <input class="form-control" placeholder="Apellido(s)" name="apellido" type='text'></input> 
                                     </div> 
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Fecha de nacimiento" name="fnacimiento" type='text'></input> 
+                                          <input class="form-control" placeholder="Fecha de nacimiento" name="fnacimiento" type='date'></input> 
                                     </div>
                                     <div class="form-group"> 
                                           <input class="form-control" placeholder="Email" name="mail" type="email"></input> 
@@ -72,7 +72,7 @@
                                           <input class="form-control" placeholder="Domicilio" name="domicilio" type='text'></input> 
                                     </div> 
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Contraseña" name="password"type="password"></input> 
+                                          <input class="form-control" placeholder="Contraseña" name="password" type="password"></input> 
                                     </div> 
                                     <div class="modal-footer"> 
                                           <button type="submit" class="btn btn-success">Iniciar sesion</button> 

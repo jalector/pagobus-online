@@ -147,7 +147,7 @@
             <label>Recibo de inscripción/colegiatura/constancia de estudios que contenga: nombre completo del alumno, sello oficial
               de la escuela, ciclo escolar y firma del director.</label>
             <div class="">
-              <input id="input-recibo" name="input-recibo" type="file"  accept=".pdf" lang="es" />
+              <input id="input-recibo" name="input-recibo" type="file"  accept=".jpg" lang="es" />
             </div>
           </div>
 
@@ -155,7 +155,7 @@
           <div class="form-group offset-md-1 col-md-10">
             <label>Credencial escolar, certificado de estudios anterior o identificación oficial(INE, pasaporte o licencia de manejo).</label>
             <div class="">
-              <input id="input-identificacion" name="input-identificacion" type="file"  accept=".pdf" lang="es" />
+              <input id="input-identificacion" name="input-identificacion" type="file"  accept=".jpg" lang="es" />
             </div>
           </div>
           <div class="form-group offset-md-1 col-md-10">

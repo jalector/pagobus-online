@@ -29,8 +29,7 @@ create table Historial(
 id_Historial int not null auto_increment primary key,
 accion varchar(100) not null,
 observaciones varchar(100) not null,
-id_empleado int not null,
-id_usuario int not null,
+id_empleado int,
 constraint id_Empleado foreign key (id_Empleado) references Empleado(id_Empleado)
 );
 

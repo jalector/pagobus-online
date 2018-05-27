@@ -34,26 +34,26 @@ insert into Empleado values(null, 'Valentina', 'Rojas', 21, 'Chulavista Pro Vivi
 insert into Empleado values(null, 'Juda', 'Vallejo', 20, 'Barretos', 'Cobre De San José #1909', 'judaalector_23@hotmail.com', '123asdZXC','19580813', 1);
 
 -- Insertamos los datos en historial.
-insert into Historial values(null, 'nuevo_usuario', '', 1, 1);
-insert into Historial values(null, 'nuevo_usuario', '', 2, 2);
-insert into Historial values(null, 'nuevo_usuario', '', 3, 3);
-insert into Historial values(null, 'nuevo_usuario', '', 4, 4);
-insert into Historial values(null, 'nuevo_usuario', '', 5, 5);
-insert into Historial values(null, 'nuevo_usuario', '', 6, 6);
-insert into Historial values(null, 'nuevo_usuario', '', 7, 7);
-insert into Historial values(null, 'nuevo_usuario', '', 8, 8);
-insert into Historial values(null, 'nuevo_usuario', '', 9, 9);
-insert into Historial values(null, 'nuevo_usuario', '', 10, 10);
-insert into Historial values(null, 'nuevo_usuario', '', 1, 1);
-insert into Historial values(null, 'nuevo_usuario', '', 2, 2);
-insert into Historial values(null, 'nuevo_usuario', '', 3, 3);
-insert into Historial values(null, 'nuevo_usuario', '', 4, 4);
-insert into Historial values(null, 'nuevo_usuario', '', 5, 5);
-insert into Historial values(null, 'nuevo_usuario', '', 6, 6);
-insert into Historial values(null, 'nuevo_usuario', '', 7, 7);
-insert into Historial values(null, 'nuevo_usuario', '', 8, 8);
-insert into Historial values(null, 'nuevo_usuario', '', 9, 9);
-insert into Historial values(null, 'nuevo_usuario', '', 10, 10);
+insert into Historial values(null, 'nuevo_usuario', '',  1);
+insert into Historial values(null, 'nuevo_usuario', '',  2);
+insert into Historial values(null, 'nuevo_usuario', '',  3);
+insert into Historial values(null, 'nuevo_usuario', '',  4);
+insert into Historial values(null, 'nuevo_usuario', '',  5);
+insert into Historial values(null, 'nuevo_usuario', '',  6);
+insert into Historial values(null, 'nuevo_usuario', '',  7);
+insert into Historial values(null, 'nuevo_usuario', '',  8);
+insert into Historial values(null, 'nuevo_usuario', '',  9);
+insert into Historial values(null, 'nuevo_usuario', '',  10);
+insert into Historial values(null, 'nuevo_usuario', '',  1);
+insert into Historial values(null, 'nuevo_usuario', '',  2);
+insert into Historial values(null, 'nuevo_usuario', '',  3);
+insert into Historial values(null, 'nuevo_usuario', '',  4);
+insert into Historial values(null, 'nuevo_usuario', '',  5);
+insert into Historial values(null, 'nuevo_usuario', '',  6);
+insert into Historial values(null, 'nuevo_usuario', '',  7);
+insert into Historial values(null, 'nuevo_usuario', '',  8);
+insert into Historial values(null, 'nuevo_usuario', '',  9);
+insert into Historial values(null, 'nuevo_usuario', '', 10);
 
 -- Insertamos los datos en estado.
 insert into Estado values(null, 'pendiente', curdate(), 1);
