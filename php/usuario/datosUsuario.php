@@ -12,7 +12,7 @@
     $id = $_GET['id'];
 
     //Consulta a ejecutar
-    $consulta = "SELECT contrasena,nombre,apellido,f_nacimiento,colonia,domicilio,correo FROM usuario WHERE id_usuario=1;";
+    $consulta = "SELECT contrasena,nombre,apellido,f_nacimiento,colonia,domicilio,correo FROM Usuario WHERE id_usuario =".$id.";";
 
     $resultado = $conexion->query($consulta);
     $respuesta = array();

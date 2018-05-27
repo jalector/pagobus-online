@@ -41,19 +41,17 @@
         <ul class="navbar-nav mr-auto">
 
         </ul>
-        <p id="bar-usuario-nombre"><i><?php echo $login_session; ?></i></p>
+        <p id="bar-usuario-nombre"><i><?php echo $_SESSION["nombre"]; ?></i></p>
         <a>
           <div id="preview">
             <?php 
-            usleep(200000);
-            $nombre_fichero = '../../resources/profile-img/img1.jpg';
-            if (file_exists($nombre_fichero)) {
-              printf("<img src='../../resources/profile-img/img1.jpg' id='bar-usuario-imagen'></img>");
-            } else {
-              printf("<img src='../../img/user.png' id='bar-usuario-imagen'></img>");
-          }
-
-          ?>
+              if (file_exists('../../resources/profile-img/'.$_SESSION["id"].'.jpg')) {
+                $foto = $_SESSION["id"];
+              } else {
+                $foto = "default";
+              }
+              echo ("<img src='../../resources/profile-img/".$foto.".jpg' id='bar-usuario-imagen'></img>");
+            ?>
         </div>
         </a>
       </div>
@@ -74,33 +72,31 @@
 
       </div>
       <!-- Contenedor lateral derecho -->
-      <div id="der-contenedor" class="col-md-9" data-id-usuario="<?php echo $_GET['idUser']; ?>">
+      <div id="der-contenedor" class="col-md-9" data-id-usuario="<?php echo $_SESSION['id']; ?>">
         <h3 class="container display-7 text-center mt-3">Actualizar datos</h3>
 
         <form id="form-registro-usuario" class="mb-3" method="POST" action="../../php/usuario/registrarUsuario.php"  enctype="multipart/form-data">
 
           <!-- Imagen de Usuario -->
           <?php 
-          usleep(200000);
-          $nombre_fichero = '../../resources/profile-img/img1.jpg';
-            if (file_exists($nombre_fichero)) {
-          printf("
-          <img id='lbl-profile-image' src='../../resources/profile-img/img1.jpg' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
-          onclick='abrirSelector()'' title='Cambiar foto de perfil'>");
+          $foto = '../../resources/profile-img/'.$_SESSION["id"].'.jpg';
+          if (file_exists($foto)) {
+            $foto = $_SESSION["id"];
           } else {
-             printf("
-          <img id='lbl-profile-image' src='../../img/user.png' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
-          onclick='abrirSelector()'' title='Cambiar foto de perfil'>");
+            $foto = "default";
           }
+          
+          echo ("<img id='lbl-profile-image' src='../../resources/profile-img/".$foto.".jpg' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
+          onclick='abrirSelector()'' title='Cambiar foto de perfil'>");
+         
           ?>
           <div class="custom-file col-md-4 offset-md-4 mb-3">
-            <input id="input-foto" name="input-foto" type="file"  accept=".jpg,.jpeg,.png"/
-            onchange="readImage()" style="display: none">
+            <input id="input-foto" name="input-foto" type="file"  accept=".jpg,.jpeg,.png" onchange="readImage()" style="display: none">
           </div>
           <!-- Identifacador este debe ser rellenado por la variable $_SESSION -->
           <div class="form-group col-md-3 offset-md-1">
               <label>No. identificación</label>
-              <input id="input-id" class="form-control"  type='number' name="input-id" <?php echo 'value="1"'; ?></input>
+              <input id="input-id" class="form-control"  type='number' name="input-id" <?php echo 'value="'.$_SESSION['id'].'"'; ?></input>
             </div>
 
           <!-- Nombre -->

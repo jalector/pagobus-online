@@ -15,8 +15,6 @@
    <body class="text-center">
       <!-- Imagén -->
       <div class="col-md-4 container animated bounceInLeft">
-
-
          <img id="img-leon" src="img/index/Leon.png">
       </div>
       <!-- Incio -->
@@ -51,31 +49,35 @@
                               </button> 
                         </div> 
                         <div class="modal-body text-center"> 
-                              <form> 
+                              <form action="php/login/register.php" method="POST">
                                     <div class="form-group"> 
                                           <img src="img/index/leyenda_pagobus.png" style="max-width:100%;"> 
                                     </div> 
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Nombre(s)" type='text'></input> 
+                                          <input class="form-control" placeholder="Nombre(s)" name="nombre" type='text'></input> 
                                     </div> 
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Apellido(s)" type='text'></input> 
+                                          <input class="form-control" placeholder="Apellido(s)" name="apellido" type='text'></input> 
                                     </div> 
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Email" type="email"></input> 
+                                          <input class="form-control" placeholder="Fecha de nacimiento" name="fnacimiento" type='text'></input> 
+                                    </div>
+                                    <div class="form-group"> 
+                                          <input class="form-control" placeholder="Email" name="mail" type="email"></input> 
+                                    </div>
+                                    <div class="form-group"> 
+                                          <input class="form-control" placeholder="Colonia" name="colonia" type='text'></input> 
                                     </div> 
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Contraseña" type="password"></input> 
+                                          <input class="form-control" placeholder="Domicilio" name="domicilio" type='text'></input> 
                                     </div> 
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Confirme su contraseña" type="password"></input> 
+                                          <input class="form-control" placeholder="Contraseña" name="password"type="password"></input> 
                                     </div> 
-                                          <div class="row text-center">         
+                                    <div class="modal-footer"> 
+                                          <button type="submit" class="btn btn-success">Iniciar sesion</button> 
                                     </div> 
                               </form>   
-                        </div> 
-                        <div class="modal-footer"> 
-                              <button type="submit" class="btn btn-success">Entrar</button> 
                         </div> 
                   </div> 
             </div> 

@@ -82,7 +82,16 @@
         <!-- Contenedor para la imagen y estus-->
             <div id="imagen-cont">
               <br><br><br>
-              <img src="../../img/user.png" class="rounded mx-auto d-block"><br>
+              <?php 
+                $foto = '../../resources/profile-img/'.$_GET['idUser'].'.jpg';
+                if (file_exists($foto)) {
+                  $foto = $_GET['idUser'];
+                } else {
+                  $foto = "default";
+                }
+                echo ("<img src='../../resources/profile-img/".$foto.".jpg' style='width: 180px;height: 180px;'class='rounded-circle mx-auto d-block'></img>");
+            ?>
+              <br>
               <label for="txt_status">Status:</label>
               <input type="text" id="txt_status" ><br>
             </div>

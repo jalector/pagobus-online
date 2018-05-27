@@ -37,18 +37,17 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
         </ul>
-        <p id="bar-usuario-nombre"><i><?php echo $login_session; ?></p>
-        <a >
+        <p id="bar-usuario-nombre"><i><?php echo $_SESSION["nombre"]; ?></p>
           <div id="preview">
             <?php 
-            $nombre_fichero = '../../resources/profile-img/img1.jpg';
-            if (file_exists($nombre_fichero)) {
-              printf("<img src='../../resources/profile-img/img1.jpg' id='bar-usuario-imagen'></img>");
-            } else {
-              printf("<img src='../../img/user.png' id='bar-usuario-imagen'></img>");
-          }
-
-          ?>
+              $foto = '../../resources/profile-img/'.$_SESSION["id"].'.jpg';
+              if (file_exists($foto)) {
+                $foto = $_SESSION["id"];
+              } else {
+                $foto = "default";
+              }
+              echo ("<img src='../../resources/profile-img/".$foto.".jpg' id='bar-usuario-imagen'></img>");
+            ?>
         </div>
       </div>
     </nav>

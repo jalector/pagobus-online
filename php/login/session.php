@@ -6,7 +6,7 @@
  * Fecha: 25 de Mayo del 2018
  */
 
-
+ 
     /**
      * Nombre: Juda Alector Vallejo Herrera
      * Descripción: Inicia una sessión con un usuario según se al tipo
@@ -47,7 +47,6 @@
         }
         return $permission;
     }
-
 
 
 ?>

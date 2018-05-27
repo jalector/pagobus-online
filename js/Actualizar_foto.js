@@ -50,7 +50,5 @@ function readImage() {
   });
 }
 function abrirSelector(){
-  
-$("#input-foto").trigger("click");
- 
+  $("#input-foto").trigger("click");
 }
