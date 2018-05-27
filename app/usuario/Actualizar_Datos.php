@@ -1,6 +1,9 @@
-<?php
-include('../../session.php');
-
+<?php 
+    include '../../php/login/session.php';
+    session_start();
+    if(!checkPermission($_SESSION['tipo'])){
+      header("Location: ../server-errors/error_404.html");
+    }
 ?>
 <!DOCTYPE html>
 <html>
