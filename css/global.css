@@ -59,3 +59,14 @@ body{
     width: 130px;
     background-color: #169bd5;
 }
+#preview img {
+   width: 51px;
+   height: 51px;
+    background: #eee;
+    border-radius: 55%;
+    margin right: 600px;
+}
+#preview{
+    margin-right: 14px;
+    
+}
