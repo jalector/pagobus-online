@@ -29,7 +29,7 @@
             <div class="form-group">
                <input class="form-control" name ="contrasena" placeholder="Contraseña" type="password" required=""></input>
             </div>
-            <div class="alert alert-danger animated bounce delay-2" role="alert" <?php if($_GET['error'] != 1){ echo "hidden"; }?>>
+            <div class="alert alert-danger animated bounce delay-2" role="alert" <?php if(count($_GET) > 0) { if($_GET['error'] != 1){ echo "hidden"; }}else{echo "hidden";}?>>
                   Usuario o contraseña incorrecto
             </div>	
             <div class="row text-center">
