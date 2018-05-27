@@ -44,7 +44,17 @@
         </ul>
         <p id="bar-usuario-nombre"><i><?php echo $_SESSION['nombre']; ?></p>
         <a>
-          <img src="../../img/user.png" id="bar-usuario-imagen"></img>
+           <div id="preview">
+            <?php 
+            $nombre_fichero = '../../resources/profile-img/img1.jpg';
+            if (file_exists($nombre_fichero)) {
+              printf("<img src='../../resources/profile-img/img1.jpg' id='bar-usuario-imagen'></img>");
+            } else {
+              printf("<img src='../../img/user.png' id='bar-usuario-imagen'></img>");
+          }
+
+          ?>
+        </div>
         </a>
       </div>
     </nav>
@@ -67,7 +77,18 @@
         <center><h3>Estado Actual</h3></center>
         </div>
         <!-- Imagen de Usuario -->
-          <img id="lbl-profile-image" src="../../img/user.png" class="rounded-circle mx-auto d-block img-thumbnail mb-1">
+           <?php 
+          $nombre_fichero = '../../resources/profile-img/img1.jpg';
+            if (file_exists($nombre_fichero)) {
+          printf("
+          <img id='lbl-profile-imageE' src='../../resources/profile-img/img1.jpg' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
+          onclick='abrirSelector()'>");
+          } else {
+             printf("
+          <img id='lbl-profile-imageE' src='../../img/user.png' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
+          onclick='abrirSelector()'>");
+          }
+          ?>
           <div class="custom-file col-md-4 offset-md-4 mb-3"></div>
         <form id="formulario-estado">
           <?php

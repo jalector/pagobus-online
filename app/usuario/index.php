@@ -37,10 +37,19 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
         </ul>
-        <p id="bar-usuario-nombre"> <?php echo $_SESSION['nombre']; ?></p>
-        <a>
-          <img src="../../img/user.png" id="bar-usuario-imagen"></img>
-        </a>
+        <p id="bar-usuario-nombre"><i><?php echo $login_session; ?></p>
+        <a >
+          <div id="preview">
+            <?php 
+            $nombre_fichero = '../../resources/profile-img/img1.jpg';
+            if (file_exists($nombre_fichero)) {
+              printf("<img src='../../resources/profile-img/img1.jpg' id='bar-usuario-imagen'></img>");
+            } else {
+              printf("<img src='../../img/user.png' id='bar-usuario-imagen'></img>");
+          }
+
+          ?>
+        </div>
       </div>
     </nav>
 
@@ -48,17 +57,14 @@
       <!-- Contenedor lateral izquierdo -->
       <div id="izq-contenedor" class="col-md-2">
           <button id="btn-registrar" type="button" class="btn boton-opcion">Actualizar datos
-              <script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
           </button>
           <button id="btn-solicitabaja" type="button" class="btn boton-opcion">Solicitar baja
-            <script type="text/javascript" src="../../js/usuario/Modal.js"></script>
           </button>
           <button id="btn-Vestado" type="button" class="btn boton-opcion">Ver estado
-              <script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
           </button>
           <button id="btn-salir" type="button" class="btn boton-opcion">Salir
-              <script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
           </button>
+          
 
       </div>
       <!-- Contenedor lateral derecho -->
@@ -75,6 +81,7 @@
 
       </div>
     </div>
+     <script type="text/javascript" src="../../js/usuario/navegacion.js"></script>
+     <script type="text/javascript" src="../../js/usuario/Modal.js"></script>
   </body>
-
   </html>

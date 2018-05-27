@@ -34,3 +34,7 @@ $('#btn-salir').click(function(e){
             } 
         });
     });
+
+$('#btn-inicio').click(function(e){
+    window.location.replace("../usuario/index.php");
+});

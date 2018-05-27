@@ -12,6 +12,7 @@
 
 /***************************** Peticiones a base de datos *****************************/    
     $consulta = "update Usuario set ".
+                    "contrasena = '". $_POST["input-contraseña"]."',  ".
                     "nombre = '". $_POST["input-nombre"]."',  ".
                     "apellido = '". $_POST["input-apellido"]."', ".
                     "f_nacimiento = '". $_POST["input-fechan"]."', ".
@@ -19,7 +20,7 @@
                     "colonia = '". $_POST["input-colonia"]."', ".
                     "domicilio = '". $_POST["input-domicilio"]."', ".
                     "correo = '". $_POST["input-mail"]."' ".
-                    "where id_Usuario = '". $id."';";
+                    "where id_Usuario = 1;";
 
     $conexion->query($consulta);
 

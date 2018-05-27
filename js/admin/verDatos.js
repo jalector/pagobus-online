@@ -87,7 +87,7 @@
     //FUNCION PARA CUANDO SE QUIERAN ACTUALIZAR LOS DATOS
     btnGuardar.on('click',function(){
         swal({
-			title: "¿Está seguro de que deseas\nActualizar los datos del usuario?",
+			title: "¿Está seguro de que desea\nActualizar los datos del usuario?",
 			text: "Una vez presionado 'OK' los cambios quedaran grabados",
 			icon: "warning",
 			buttons: true,
@@ -118,7 +118,7 @@
                         });;                    
                     //Acciones si es que la consulta falla
                     },failure:function(data){
-                        swal("Ha ocurrido un error al guardar los datos\nIntentalo mas tarde", {
+                        swal("Ha ocurrido un error al guardar los datos\nIntentalo más tarde", {
                         icon: "warning",
                         });
                     }
