@@ -7,6 +7,22 @@ let btnGuardar;
 
 btnGuardar = $('#btn-guardar');
 
+//CODIGO PARA PREVISUALIZAR LA IMAGEN CUANDO UN USUARIO SE REGISTRE
+document.getElementById("file").onchange = function(e) {
+    // Creamos el objeto de la clase FileReader
+    let reader = new FileReader();
+    // Leemos el archivo subido y se lo pasamos a nuestro fileReader
+    reader.readAsDataURL(e.target.files[0]);
+    
+    // Le decimos que cuando este listo ejecute el código interno
+    reader.onload = function(){
+      let image = document.getElementById('imagen-s');
+      image.src = reader.result;
+      image.width='200';
+      image.height='200';
+    };
+  }
+
 btnGuardar.on('click', function(){
 
     //Creamos variables para referenciar a los componentes
