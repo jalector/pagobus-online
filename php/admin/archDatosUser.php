@@ -2,6 +2,7 @@
     /**
      * Nombre: Juan Pablo Gallardo Ochoa
      * Descripción: Archivo que manda información de bases de datos acerca de los Archivos
+     * relacionados con un unico usuario
      * Fecha: 19 de Mayo del 2018
      */
 

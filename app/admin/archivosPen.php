@@ -64,16 +64,38 @@ include('../../php/admin/session.php');
       <div id="der-contenedor" class="col-md-9">
         <br>
           <center><h3>Archivos Pendientes</h3></center>
+          
+          <!--Formulario para enviar las actualizaciones de estado a cada documento-->
+          <form id="formulario" name="formulario" method="post" action="../../php/admin/actualizarArchivos.php">
           <!-- Tabla de archivos -->
-        <div id="tablaArchivos" class="justify-content-center"></div>
-          <!--Contenedor para los botones-->
-          <div id="btn-cont">
-            <button id="botonActualizar" class="btn">Actualizar</button>
-            <button id="botonGuardar" class="btn">Guardar</button>
+          <br>
+            <div id="tablaArchivos" class="justify-content-center"></div>
+          </form>
+           <!--Contenedor para los botones-->
+           <div id="btn-cont">
+          <button id="botonActualizar" class="btn">Actualizar Tabla</button>
+          <button id="botonGuardar" class="btn" disabled="true" onclick="confirmar()">Guardar Datos</button>
           </div>
       </div>
     </div>
   </div>
+  <script>
+    function confirmar(){//Funcion para preguntar si se quiere mandar las actualizaciones o no
+      swal({
+			title: "¿Está seguro de que deseas\nActualizar los estados?",
+			text: "Una vez presionado 'OK' los cambios quedaran grabados",
+			icon: "warning",
+			buttons: true,
+			dangerMode: true,
+		  })
+		  .then((willDelete) => {
+			    if (willDelete) {
+            var formulario = document.getElementById("formulario");
+            formulario.submit();
+          }
+      });
+    }  
+  </script>
   <script src="../../js/admin/buscarArchivos.js"></script>
 </body>
 

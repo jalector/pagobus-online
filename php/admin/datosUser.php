@@ -1,7 +1,7 @@
 <?php
     /**
      * Nombre: Juan Pablo Gallardo Ochoa
-     * Descripción: Archivo que registra un nuevo usuario en la BD
+     * Descripción: Archivo que extrae la informacion de un unico usuario junto con su estado actual
      * Fecha: 19 de Mayo del 2018
      */
 

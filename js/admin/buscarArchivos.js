@@ -1,14 +1,30 @@
 /*
 *  Nombre: Juan Pablo Gallardo Ochoa 
-*  Descripción: Archivo de js, para buscar a Archivos y crear tabla.
+*  Descripción: Archivo de js, para buscar a Archivos con estado pendiente y crear tabla.
 *  Fecha: 18 de Mayo 2018
 */
+
 (function(){
     /**
      * Nombre: Juan Pablo Gallardo Ochoa
      * Descripción: Función la cual realiza la petición php para traer los datos.
      * Fecha: 18 de Mayo del 2018
      */
+
+    //Boton para realizar la busqueda
+    let bbutton;
+
+    //Almacenamos las vistas en variables.
+    bbutton = $('#botonActualizar');
+    btnGuardar = $('#botonGuardar');
+    //EVENTO PARA CUANDO SE DESEA ACTUALIZAR LA TABLA DE DOCUMENTOS
+    bbutton.on('click',function(){ 
+        getArchivos();
+        var boton = document.getElementById("botonGuardar");
+        boton.disabled = false;
+    });
+    bbutton.trigger('click');
+
     function getArchivos(){
         $.ajax({
             url: "../../php/admin/getArchivos.php",
@@ -27,17 +43,6 @@
         });
     
     }
-
-    //Boton para realizar la busqueda
-    let bbutton;
-
-    //Almacenamos las vistas en variables.
-    bbutton = $('#botonActualizar');
-
-    bbutton.on('click',function(){ 
-        getArchivos();
-    });
-    bbutton.trigger('click');
 
     /**
      * Nombre: Juan Pablo Gallardo Ochoa
@@ -64,10 +69,24 @@
             tb.append($('<tr>',{
                 class: 'table-warning',
                 html: [
-                    $('<td>', {html: element.id}),
+                    $('<td>', {html:[
+                        $("<select>", {
+                            name: "id[]",
+                            class: "custom-select custom-select-sm",
+                            html: "<option selected>"+element.id+"</option>"
+                        })
+                    ]}),
                     $('<td>', {html: element.documento}),
                     $('<td>', {html: element.nombre}),
-                    $('<td>', {html: element.estado}),
+                    $('<td>', {html: [
+                        $("<select>", {
+                            name: "estado[]",
+                            class: "custom-select custom-select-sm",
+                            html: "<option selected>"+element.estado+"</option>"+
+                                  "<option>Aceptado</option>"+
+                                  "<option>Rechazado</option>"
+                        })
+                    ]}),
                 ]
             }))
         });
@@ -79,6 +98,4 @@
         });
         return table;
     }
-
-
 })();

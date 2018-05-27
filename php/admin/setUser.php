@@ -40,10 +40,11 @@
     //Ejecutamos la consulta
     $conexion->query($consulta);
 
+    //Consulta para relacionar el estado con el usuario correspondiente
     $consulta = "UPDATE usuario SET usuario.id_Status = usuario.id_usuario where usuario.correo = '".$correo."';";
 
-//Ejecutamos la consulta
-$conexion->query($consulta);
+    //Ejecutamos la consulta
+    $conexion->query($consulta);
 
     //Cerramos la conexión.
     $conexion->close();

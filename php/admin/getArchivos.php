@@ -1,7 +1,7 @@
 <?php
     /**
      * Nombre: Juan Pablo Gallardo Ochoa
-     * Descripción: Archivo que manda información de bases de datos acerca de los Archivos
+     * Descripción: Archivo que obtiene todos los archivos con estado de pendiente
      * Fecha: 18 de Mayo del 2018
      */
 

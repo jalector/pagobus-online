@@ -88,10 +88,12 @@ include('../../php/admin/session.php');
         <!-- Contenedor para los botones-->
             <div id="btn-cont">
                 <button id="btn-Guardar" class="btn">Guardar</button>
+                <button id="btn-Eliminar" class="btn">Eliminar Usuario</button>
             </div>
       </div>
     </div>
   </div>
+  <script src="../../js/admin/eliminarUsuario.js"></script>
   <script src="../../js/admin/verDatos.js"></script>
 </body>
 

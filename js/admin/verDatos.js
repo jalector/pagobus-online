@@ -1,14 +1,15 @@
 /*
 *  Nombre: Juan Pablo Gallardo Ochoa 
-*  Descripción: Archivo de js, para Mostrar los datos de un usuario, la tabla de archivos
+*  Descripción: Archivo de js, para Mostrar los datos de un usuario, una tabla con sus archivos
 *  y poder actualizar datos del usuario.
 *  Fecha: 19 de Mayo 2018
 */
+
 (function(){
 
     //LLENADO DE CAMPOS PARA LOS DATOS DE USUARIO
     //Variables para referenciar los botones
-    let btnEditar, disabledtxtNombre, txtApellido, txtFecha, txtColonia, txtDomicilio, txtStatus;
+    let btnGuardar,disabledtxtNombre, txtApellido, txtFecha, txtColonia, txtDomicilio, txtStatus;
 
     //Almacenamos las vistas en variables.
     btnGuardar = $('#btn-Guardar');
@@ -126,4 +127,5 @@
 			} 
 		});
     });
+
 })();
