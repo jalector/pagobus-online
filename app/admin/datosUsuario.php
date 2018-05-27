@@ -1,6 +1,9 @@
-<?php
-include('../../php/admin/session.php');
-
+<?php 
+    include '../../php/login/session.php';
+    session_start();
+    if(!checkPermission($_SESSION['tipo'])){
+      header("Location: ../server-errors/error_404.html");
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,7 +40,7 @@ include('../../php/admin/session.php');
         <ul class="navbar-nav mr-auto">
 
         </ul>
-        <p id="bar-usuario-nombre"><i><?php echo $login_session; ?></i></p>
+        <p id="bar-usuario-nombre"><i><?php echo $_SESSION['nombre']; ?></i></p>
         <a>
           <img src="../../img/user.png" id="bar-usuario-imagen"></img>
         </a>
@@ -79,7 +82,16 @@ include('../../php/admin/session.php');
         <!-- Contenedor para la imagen y estus-->
             <div id="imagen-cont">
               <br><br><br>
-              <img src="../../img/user.png" class="rounded mx-auto d-block"><br>
+              <?php 
+                $foto = '../../resources/profile-img/'.$_GET['idUser'].'.jpg';
+                if (file_exists($foto)) {
+                  $foto = $_GET['idUser'];
+                } else {
+                  $foto = "default";
+                }
+                echo ("<img src='../../resources/profile-img/".$foto.".jpg' style='width: 180px;height: 180px;'class='rounded-circle mx-auto d-block'></img>");
+            ?>
+              <br>
               <label for="txt_status">Status:</label>
               <input type="text" id="txt_status" ><br>
             </div>

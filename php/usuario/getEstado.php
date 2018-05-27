@@ -6,10 +6,11 @@
      */
     include '../../php/conexion.php';
     $conexion = conectar();
-   // $id =  $_POST["input-id"];
+    $id =  $_SESSION["id"];
 
     /***************************** Peticiones a base de datos *****************************/    
-    $consulta = "select nombre,apellido,f_nacimiento,correo,domicilio,colonia,tipo_estado from usuario u JOIN estado e on u.id_status=e.id_status WHERE id_usuario=2";
+    $consulta = "select nombre, apellido, f_nacimiento, correo, domicilio, colonia, tipo_estado
+    from Usuario u JOIN Estado e on u.id_status=e.id_status WHERE id_Usuario=".$id.";";
 
 //Ejecuto la consulta y la guardo en resultado
      $resultado = $conexion->query($consulta);

@@ -15,7 +15,10 @@ $('#btn-salir').click(function(e){
 		})
 		.then((willDelete) => {
 			if (willDelete) {
-				window.location.replace("../../index.php")
+				window.location.replace("../../index.php");
+				$.ajax({
+					url: "../php/login/logout.php"
+				});
 			} 
 		});
 	});

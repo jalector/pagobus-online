@@ -27,27 +27,33 @@ insert into Empleado values(null, 'Daniel', 'Barrientos', 19, 'Cementos', 'De La
 insert into Empleado values(null, 'Alfonso', 'Monteon', 68, 'Cumbres del Sol', 'Chiapas Norte #1545', 'alfonso_68@hotmail.com', '123asdZXC', '19730325', 2);
 insert into Empleado values(null, 'Sandra', 'Feliz', 49, 'Aztecas', 'Argón #1430', 'sandra_49@hotmail.com', '123asdZXC', '19580813', 2);
 
+ -- Insertamos los usuarios Master
+insert into Empleado values(null, 'Angel', 'Hernandez', 19, 'Country del Lago', 'Convento Del Caudete #258','angelH_121@hotmail.com', '123asdZXC','19580813', 1);
+insert into Empleado values(null, 'Pablo', 'Gallardo', 20, 'Complejo La Cima', 'Armadillo #2121', 'jpg_182@hotmail.com', '123asdZXC','19580813', 1);
+insert into Empleado values(null, 'Valentina', 'Rojas', 21, 'Chulavista Pro Vivienda Obrera', 'Banano #1470', 'vale040413@hotmail.com', '123asdZXC','19580813', 1);
+insert into Empleado values(null, 'Juda', 'Vallejo', 20, 'Barretos', 'Cobre De San José #1909', 'judaalector_23@hotmail.com', '123asdZXC','19580813', 1);
+
 -- Insertamos los datos en historial.
-insert into Historial values(null, 'nuevo_usuario', '', 1, 1);
-insert into Historial values(null, 'nuevo_usuario', '', 2, 2);
-insert into Historial values(null, 'nuevo_usuario', '', 3, 3);
-insert into Historial values(null, 'nuevo_usuario', '', 4, 4);
-insert into Historial values(null, 'nuevo_usuario', '', 5, 5);
-insert into Historial values(null, 'nuevo_usuario', '', 6, 6);
-insert into Historial values(null, 'nuevo_usuario', '', 7, 7);
-insert into Historial values(null, 'nuevo_usuario', '', 8, 8);
-insert into Historial values(null, 'nuevo_usuario', '', 9, 9);
-insert into Historial values(null, 'nuevo_usuario', '', 10, 10);
-insert into Historial values(null, 'nuevo_usuario', '', 1, 1);
-insert into Historial values(null, 'nuevo_usuario', '', 2, 2);
-insert into Historial values(null, 'nuevo_usuario', '', 3, 3);
-insert into Historial values(null, 'nuevo_usuario', '', 4, 4);
-insert into Historial values(null, 'nuevo_usuario', '', 5, 5);
-insert into Historial values(null, 'nuevo_usuario', '', 6, 6);
-insert into Historial values(null, 'nuevo_usuario', '', 7, 7);
-insert into Historial values(null, 'nuevo_usuario', '', 8, 8);
-insert into Historial values(null, 'nuevo_usuario', '', 9, 9);
-insert into Historial values(null, 'nuevo_usuario', '', 10, 10);
+insert into Historial values(null, 'nuevo_usuario', '',  1);
+insert into Historial values(null, 'nuevo_usuario', '',  2);
+insert into Historial values(null, 'nuevo_usuario', '',  3);
+insert into Historial values(null, 'nuevo_usuario', '',  4);
+insert into Historial values(null, 'nuevo_usuario', '',  5);
+insert into Historial values(null, 'nuevo_usuario', '',  6);
+insert into Historial values(null, 'nuevo_usuario', '',  7);
+insert into Historial values(null, 'nuevo_usuario', '',  8);
+insert into Historial values(null, 'nuevo_usuario', '',  9);
+insert into Historial values(null, 'nuevo_usuario', '',  10);
+insert into Historial values(null, 'nuevo_usuario', '',  1);
+insert into Historial values(null, 'nuevo_usuario', '',  2);
+insert into Historial values(null, 'nuevo_usuario', '',  3);
+insert into Historial values(null, 'nuevo_usuario', '',  4);
+insert into Historial values(null, 'nuevo_usuario', '',  5);
+insert into Historial values(null, 'nuevo_usuario', '',  6);
+insert into Historial values(null, 'nuevo_usuario', '',  7);
+insert into Historial values(null, 'nuevo_usuario', '',  8);
+insert into Historial values(null, 'nuevo_usuario', '',  9);
+insert into Historial values(null, 'nuevo_usuario', '', 10);
 
 -- Insertamos los datos en estado.
 insert into Estado values(null, 'pendiente', curdate(), 1);
@@ -93,10 +99,3 @@ insert into Usuario values(null, '123asdZXC', 'Jorge', 'Feliz', '20030123', 'def
 insert into Usuario values(null, '123asdZXC', 'Patricia', 'Hernández', '20010701', 'default', 'Acrópolis', 'El Maguey #1643', 'patricia_39@hotmail.com', null, 3, 19);
 insert into Usuario values(null, '123asdZXC', 'André', 'Montesillo', '19940908', 'default', 'Bellavista', 'Del Polen #1446', 'andré_20@hotmail.com', null, 3, 20);
 
-
-
- -- Insertamos los usuarios Master
-insert into Empleado values(null, 'Angel', 'Hernandez', 19, 'Country del Lago', 'Convento Del Caudete #258','angelH_121@hotmail.com', '123asdZXC', 3);
-insert into Empleado values(null, 'Pablo', 'Gallardo', 20, 'Complejo La Cima', 'Armadillo #2121', 'jpg_182@hotmail.com', '123asdZXC', 3);
-insert into Empleado values(null, 'Valentina', 'Rojas', 21, 'Chulavista Pro Vivienda Obrera', 'Banano #1470', 'vale040413@hotmail.com', '123asdZXC', 3);
-insert into Empleado values(null, 'Juda', 'Vallejo', 20, 'Barretos', 'Cobre De San José #1909', 'judaalector_23@hotmail.com', '123asdZXC', 3);

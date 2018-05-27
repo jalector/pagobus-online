@@ -8,40 +8,42 @@
 
     //Nos permite conectar a base de datos.
     include "../conexion.php";
+    include "session.php";
     $conexion = conectar();
 
     //Almacenamos los valore que se ocuparan para validar nuestra nueva entrada
     $correo = $_POST['correo'];
     $password = $_POST['contrasena'];
     $error = 1;
-
-    $consulta = "select u.id_usuario as id, concat(u.nombre, ' ', u.apellido) as nombre, u.correo, (u.contrasena = '".$password."') as valid 
-        from Usuario u where correo = '".$correo."';";
-
+    $consulta = "select u.id_usuario as id, concat(u.nombre, ' ', u.apellido) as nombre, u.correo, u.id_tipoUsuario as tipo, (u.contrasena = '".$password."') as valid 
+    from Usuario u where correo = '".$correo."';";
+    
     $resultado = $conexion->query($consulta)->fetch_assoc();
-
+    
     //Verificando sí estamos conectando con un usuario.
     if(isset($resultado)){
         if($resultado['valid']){
             $error = 0;
         }
     }else{
-        $consulta = "select e.id_empleado as id, concat(e.nombre, ' ', e.apellido) as nombre, e.correo, (e.contrasena = '".$password."') as valid
-            from Empleado e where correo = '".$correo."';";        
+        $consulta = "select e.id_empleado as id, concat(e.nombre, ' ', e.apellido) as nombre, e.correo, e.id_tipoUsuario as tipo, (e.contrasena = '".$password."') as valid
+        from Empleado e where correo = '".$correo."';";        
         $resultado = $conexion->query($consulta)->fetch_assoc();
-
+        
         //Verificando sí estamos conectando con un empleado.
         if(isset($resultado)){            
             if($resultado["valid"]){
-                $erro = 0;
+                $error = 0;
             }
         }
     }
-
-    function startSessionWith($usuario){
-        session_start();
-    }
     
+    if(!$error){
+        startSessionWith($resultado);
+    }else{
+        header("Location: ../../index.php?error=1");
+    }
+   
     /*
         Obtener el correo en usuarios,
             SI:     saltar jump1

@@ -59,3 +59,14 @@ body{
     width: 130px;
     background-color: #169bd5;
 }
+
+#preview img {
+    width: 51px;
+    height: 51px;
+    background: #eee;
+}
+
+
+.delay-2{
+    animation-delay: 2.5s;
+}

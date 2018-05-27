@@ -32,4 +32,4 @@
     $conexion->close();
     //Devolvemos la respuesta.
     echo json_encode(utf8ize($respuesta));
-?>
+?>  

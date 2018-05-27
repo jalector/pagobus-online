@@ -33,7 +33,6 @@
                 estado: 'pendiente'
             },success:function(data){
                 //Se colocan los datos en el contenedor para la tabla
-                console.log(JSON.parse(data))
                 $('#tablaArchivos')
                     .empty()
                     .append(createTable(JSON.parse(data)));
