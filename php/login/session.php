@@ -23,8 +23,8 @@
 
         switch($usuario["tipo"]){
             case 1: header("Location: ../../app/master/index.php"); break;
-            case 2: header("Location: ../..//app/admin/index.php"); break;
-            case 3: header("Location: ../..//app/usuario/index.php"); break;
+            case 2: header("Location: ../../app/admin/index.php"); break;
+            case 3: header("Location: ../../app/usuario/index.php"); break;
             default: header("Location: /app/server-errors/no_login.html"); break;
         }
     }
