@@ -45,8 +45,8 @@
         <a>
           <div id="preview">
             <?php 
-              if (file_exists('../../resources/profile-img/'.$_SESSION["id"].'.jpg')) {
-                $foto = $_SESSION["id"];
+              if (file_exists('../../resources/profile-img/img'.$_SESSION["id"].'.jpg')) {
+                $foto = "img".$_SESSION["id"];
               } else {
                 $foto = "default";
               }
@@ -79,9 +79,9 @@
 
           <!-- Imagen de Usuario -->
           <?php 
-          $foto = '../../resources/profile-img/'.$_SESSION["id"].'.jpg';
+          $foto = '../../resources/profile-img/img'.$_SESSION["id"].'.jpg';
           if (file_exists($foto)) {
-            $foto = $_SESSION["id"];
+            $foto = "img".$_SESSION["id"];
           } else {
             $foto = "default";
           }

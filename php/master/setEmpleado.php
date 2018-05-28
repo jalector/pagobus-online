@@ -19,7 +19,7 @@
     $edad = $_POST['edad'];
 
     //Consulta a ejecutar Para agregar un nuevo usuario
-    $consulta = "INSERT INTO empleado VALUES (
+    $consulta = "INSERT INTO Empleado VALUES (
         null,
          '".$nombre."',
          '".$apellido."',

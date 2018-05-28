@@ -14,7 +14,7 @@
     //Consulta a ejecutar
     $consulta = "
     SELECT d.id_Documento as id, d.documento as documento, d.f_actualizacion as fecha, d.estado
-    FROM usuario u JOIN documento d on u.id_usuario = d.id_usuario
+    FROM Usuario u JOIN Documento d on u.id_usuario = d.id_usuario
     WHERE u.id_usuario = ".$id.";";
     
     $resultado = $conexion->query($consulta);

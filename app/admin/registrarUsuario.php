@@ -65,56 +65,65 @@
         <br>
           <center><h3>Registro de usuario</h3></center>
           <!-- Creacion de un contenedor para generar el formulario de llenado-->
-          <div id="formulario">
-            <!--Tabla para dar mejor formatoa a los componenres-->
-            <table>
-              <tr>
-                  <td><label for="txt_nombre">Nombre(s)</label></td> 
-                  <td><input type="text" id="txt_nombre"></td>            
-              </tr>
-              <tr>
-                  <td><label for="txt_apellido">Apellido(s)</label></td> 
-                  <td><input type="text" id="txt_apellido"></td>            
-              </tr>
-              <tr>
-                  <td><label for="txt_fechaNa">Fecha de nacimiento</label></td> 
-                  <td><input type="text" id="txt_fechaNa"></td>            
-              </tr>
-              <tr>
-                  <td> <label for="txt_correo">Correo</label></td> 
-                  <td><input type="email" id="txt_correo"></td>            
-              </tr>
-              <tr>
-                  <td><label for="txt_colonia">Colonia</label></td> 
-                  <td><input type="text" id="txt_colonia"></td>            
-              </tr>
-              <tr>
-                  <td> <label for="txt_domicilio">Domicilio</label></td> 
-                  <td><input type="text" id="txt_domicilio"></td>            
-              </tr>
-              <tr>
-                  <td> <label for="txt_contrasena">Contraseña</label></td> 
-                  <td> <input type="password" id="txt_contrasena"></td>            
-              </tr>
-              <tr>
-                  <td><label for="txt_confirmCon">Confirme contraseña</label></td> 
-                  <td><input type="password" id="txt_confirmCon"></td>            
-              </tr>
-            </table>
-            <!--Boton para realizar el registro-->
-               <button id="btn-guardar" type="button" class="btn btn-formulario">Registrar Usuario
-               </button>
-               
-          </div>
-          <!--Contenedor para ingresar la imagen del usuario-->
-          <div id="img-usr">
+          <form id="form-registro-usuario" class="mb-3" method="POST" action="../../php/admin/setUser.php"  enctype="multipart/form-data">
+
+            <!-- Imagen de Usuario -->            
+            <img id='lbl-profile-image' src='../../resources/profile-img/default.jpg' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
+            onclick='abrirSelector()' title='Cambiar foto de perfil'>
+          
+            <div class="custom-file col-md-4 offset-md-4 mb-3">
+              <input id="input-foto" name="input-foto" type="file"  accept=".jpg,.jpeg,.png" onchange="imageNewUser()" style="display: none">
+            </div>
+            <!-- Identifacador este debe ser rellenado por la variable $_SESSION -->
             
-            <img id="imagen-s" src="../../img/user.png" class="rounded mx-auto d-block"><br>
-            <input id="file" type="file" />
-          </div>
+            <!-- Nombre -->
+            <div class="form-group col-md-10 offset-md-1">
+              <label>Nombre</label>
+              <input id="input-nombre" class="form-control " placeholder="Nombre" type='text' name="input-nombre" autocomplete="given-name" required></input>
+            </div>
+            
+            <!-- Apellido-->
+            <div class="form-group col-md-10 offset-md-1">
+              <label for="input-apellido">Apellido</label>
+              <input id="input-apellido" name="input-apellido" class="form-control" placeholder="Apellidos" type='text' autocomplete="family-name" required></input>
+            </div>
+
+            <!-- Contraseña -->
+            <div class="form-group col-md-10 offset-md-1">
+              <label for="input-contraseña">Contraseña</label>
+              <input id="input-contraseña" name="input-contraseña" class="form-control" placeholder="Contraseña" type='password' autocomplete="new-password" required></input>
+            </div>
+
+            <!-- Fecha de nacimiento -->
+            <div class="form-group col-md-10 offset-md-1">
+              <label for="input-fecha">Fecha de nacimiento</label>
+              <input id="input-fechan" name="input-fechan" class="form-control" placeholder="Fecha de nacimiento" type='date' required></input>
+            </div>
+            
+            <!-- Email-->
+            <div class="form-group col-md-10 offset-md-1">
+              <label for="input-mail">Correo eléctronico</label>
+              <input id="input-mail" name="input-mail" class="form-control" placeholder="Email" type='email' required></input>
+            </div>
+
+            <!-- Domicilio -->
+            <div class="form-group col-md-10 offset-md-1">
+              <label for="input-domicilio">Domicilio</label>
+              <input id="input-domicilio" name="input-domicilio" class="form-control " placeholder="Domicilio" type='text' required></input>
+            </div>
+
+            <!-- Colonia -->
+            <div class="form-group col-md-10 offset-md-1">
+              <label for="input-colonia">Colonia</label>
+              <input id="input-colonia" name="input-colonia" class="form-control" placeholder="Colonia" type='text' required></input>
+            </div>
+            <button id="btn-aceptar" type="submit" class="btn btn-success col-md-2 offset-md-5">Guardar cambios  </button>
+          </form>
+          
       </div>
     </div>
   </div>
+  <script src="../../js/Actualizar_foto.js" type="text/javascript"></script>
   <script src="../../js/admin/registrarUsuario.js"></script>
 </body>
 

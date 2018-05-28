@@ -18,7 +18,7 @@
         $type = $_POST['type'];
     }
     //Consulta a ejecutar
-    $consulta = "select * from (select e.id_empleado as id, concat(e.nombre, ' ', e.apellido) as nombre, e.correo, e.f_contratacion as contratacion from empleado e) c ";
+    $consulta = "select * from (select e.id_empleado as id, concat(e.nombre, ' ', e.apellido) as nombre, e.correo, e.f_contratacion as contratacion from Empleado e) c ";
     //Se evalua el tipo de busquedas
     if($value != ""){
         switch($type){

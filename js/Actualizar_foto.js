@@ -49,6 +49,26 @@ function readImage() {
     });
   });
 }
+
+function imageNewUser() {
+
+  // Creauna nueva instancia de FileReader 
+  // https://developer.mozilla.org/en/docs/Web/API/FileReader
+  var reader = new FileReader();
+  var file = document.getElementById('input-foto').files[0];
+  reader.readAsDataURL(file);
+
+  // Una vez ya ha sido leído:
+  reader.addEventListener("load", function() {
+
+    var image = new Image();
+    image.src = reader.result;
+    image.addEventListener("load", function() {
+       $("#lbl-profile-image").attr('src', image.src);
+    });
+  });
+}
+
 function abrirSelector(){
   $("#input-foto").trigger("click");
 }

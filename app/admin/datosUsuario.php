@@ -83,9 +83,9 @@
             <div id="imagen-cont">
               <br><br><br>
               <?php 
-                $foto = '../../resources/profile-img/'.$_GET['idUser'].'.jpg';
+                $foto = '../../resources/profile-img/img'.$_GET['idUser'].'.jpg';
                 if (file_exists($foto)) {
-                  $foto = $_GET['idUser'];
+                  $foto = "img".$_GET['idUser'];
                 } else {
                   $foto = "default";
                 }

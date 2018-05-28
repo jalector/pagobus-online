@@ -36,7 +36,8 @@ btnEliminar.on('click',function(){
                     })
                     .then((willDelete) => {
                         if (willDelete) {
-                            window.location.reload();
+                            //Regresamos a la página de buscar usuario  porque ya no exite el que tenímos
+                            window.location.replace("../../app/admin/buscarUsuario.php");
                         } 
                     });;                    
                 //Acciones si es que la consulta falla

@@ -41,3 +41,8 @@ label{
     font-size: 11px;
 }
 
+#lbl-profile-image{
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+}

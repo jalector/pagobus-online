@@ -54,25 +54,25 @@
                                           <img src="img/index/leyenda_pagobus.png" style="max-width:100%;"> 
                                     </div> 
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Nombre(s)" name="nombre" type='text'></input> 
+                                          <input class="form-control" placeholder="Nombre(s)" name="nombre" type='text' required></input> 
                                     </div> 
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Apellido(s)" name="apellido" type='text'></input> 
+                                          <input class="form-control" placeholder="Apellido(s)" name="apellido" type='text' required></input> 
                                     </div> 
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Fecha de nacimiento" name="fnacimiento" type='date'></input> 
+                                          <input class="form-control" placeholder="Fecha de nacimiento" name="fnacimiento" type='date' required></input> 
                                     </div>
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Email" name="mail" type="email"></input> 
+                                          <input class="form-control" placeholder="Email" name="mail" type="email" required></input> 
                                     </div>
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Colonia" name="colonia" type='text'></input> 
+                                          <input class="form-control" placeholder="Colonia" name="colonia" type='text' required></input> 
                                     </div> 
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Domicilio" name="domicilio" type='text'></input> 
+                                          <input class="form-control" placeholder="Domicilio" name="domicilio" type='text' required></input> 
                                     </div> 
                                     <div class="form-group"> 
-                                          <input class="form-control" placeholder="Contraseña" name="password" type="password"></input> 
+                                          <input class="form-control" placeholder="Contraseña" name="password" type="password" autocomplete="new-password" required></input> 
                                     </div> 
                                     <div class="modal-footer"> 
                                           <button type="submit" class="btn btn-success">Iniciar sesion</button> 

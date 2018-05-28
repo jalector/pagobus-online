@@ -19,22 +19,22 @@
 
     //Consulta a ejecutar ACTUALIZA DATOS DE USUARIO
     $consultaU = "
-    UPDATE usuario
-    SET usuario.nombre='".$nombre."',
-    usuario.apellido='".$apellido."',
-    usuario.f_nacimiento='".$fecha."',
-    usuario.colonia='".$colonia."',
-    usuario.domicilio='".$domicilio."'
-    WHERE usuario.id_usuario=".$id.";";
+    UPDATE Usuario u
+    SET u.nombre='".$nombre."',
+    u.apellido='".$apellido."',
+    u.f_nacimiento='".$fecha."',
+    u.colonia='".$colonia."',
+    u.domicilio='".$domicilio."'
+    WHERE u.id_usuario=".$id.";";
         
     //Ejecutamos la consulta
     $conexion->query($consultaU);
 
     //consulta a ejecutar ACTUALIZA EL ESTADO DEL USUARIO
     $consultaU = "
-    UPDATE estado
-    SET estado.tipo_estado='".$estado."'
-    WHERE estado.id_status=".$id.";";
+    UPDATE Estado e
+    SET e.tipo_estado='".$estado."'
+    WHERE e.id_status=".$id.";";
 
     //Ejecutamos la consulta
     $conexion->query($consultaU);

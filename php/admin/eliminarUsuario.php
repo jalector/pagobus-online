@@ -14,19 +14,26 @@
     $id = $_POST['id'];
 
     //Consulta a ejecutar ELIMINAR LOS DOCUMENTOS RELACIONADOS CON EL USUARIO
-    $consultad = "DELETE FROM documento WHERE documento.id_usuario=".$id.";";        
+    $consultad = "DELETE FROM Documento WHERE Documento.id_usuario=".$id.";";        
     //Ejecutamos la consulta
     $conexion->query($consultad);
 
     //Consulta a ejecutar ELIMINAR AL USUARIO
-    $consultau = "DELETE FROM usuario WHERE usuario.id_usuario=".$id.";";        
+    $consultau = "DELETE FROM Usuario WHERE Usuario.id_usuario=".$id.";";        
     //Ejecutamos la consulta
     $conexion->query($consultau);
 
     //Consulta a ejecutar ELIMINAR EL ESTADO RELACIONADO CON EL USUARIO
-    $consultae = "DELETE FROM estado WHERE estado.id_status=".$id.";";        
+    $consultae = "DELETE FROM Estado WHERE Estado.id_status=".$id.";";        
+
+    
     //Ejecutamos la consulta
     $conexion->query($consultae);
+
+    //Borramo los archivos del usuario.
+    array_map('unlink', glob("../../resources/profile-docs/identificacion".$id.".*"));
+    array_map('unlink', glob("../../resources/profile-docs/recibo$id.*"));
+    array_map('unlink', glob("../../resources/profile-img/img$id.*"));
 
     //Cerramos la conexión.
     $conexion->close();

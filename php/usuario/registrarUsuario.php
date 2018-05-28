@@ -20,7 +20,7 @@
                     "colonia = '". $_POST["input-colonia"]."', ".
                     "domicilio = '". $_POST["input-domicilio"]."', ".
                     "correo = '". $_POST["input-mail"]."' ".
-                    "where id_Usuario = 1;";
+                    "where id_Usuario = $id;";
 
     $conexion->query($consulta);
 

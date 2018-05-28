@@ -13,7 +13,7 @@
     //Consulta a ejecutar
     $consulta = "
     select d.id_Documento as id, d.documento as documento, concat(u.nombre, ' ', u.apellido)as nombre, d.estado as estado
-    from usuario u JOIN documento d ON u.id_usuario = d.id_usuario 
+    from Usuario u JOIN Documento d ON u.id_usuario = d.id_usuario 
     WHERE d.estado = '".$estado."';";
     
     $resultado = $conexion->query($consulta);

@@ -40,9 +40,9 @@
         <p id="bar-usuario-nombre"><i><?php echo $_SESSION["nombre"]; ?></p>
           <div id="preview">
             <?php 
-              $foto = '../../resources/profile-img/'.$_SESSION["id"].'.jpg';
+              $foto = '../../resources/profile-img/img'.$_SESSION["id"].'.jpg';
               if (file_exists($foto)) {
-                $foto = $_SESSION["id"];
+                $foto = "img".$_SESSION["id"];
               } else {
                 $foto = "default";
               }

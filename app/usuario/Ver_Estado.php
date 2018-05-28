@@ -46,9 +46,9 @@
         <a>
            <div id="preview">
             <?php 
-              $foto = '../../resources/profile-img/'.$_SESSION["id"].'.jpg';
+              $foto = '../../resources/profile-img/img'.$_SESSION["id"].'.jpg';
               if (file_exists($foto)) {
-                $foto = $_SESSION["id"];
+                $foto = "img".$_SESSION["id"];
               } else {
                 $foto = "default";
               }
@@ -77,17 +77,15 @@
         <center><h3>Estado Actual</h3></center>
         </div>
         <!-- Imagen de Usuario -->
-           <?php 
-          $nombre_fichero = '../../resources/profile-img/1.jpg';
-            if (file_exists($nombre_fichero)) {
-          printf("
-          <img id='lbl-profile-imageE' src='../../resources/profile-img/1.jpg' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
-          onclick='abrirSelector()'>");
-          } else {
-             printf("
-          <img id='lbl-profile-imageE' src='../../img/user.png' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
-          onclick='abrirSelector()'>");
-          }
+          <?php 
+              $foto = '../../resources/profile-img/img'.$_SESSION["id"].'.jpg';
+              if (file_exists($foto)) {
+                $foto = "img".$_SESSION["id"];
+              } else {
+                $foto = "default";
+              }
+              echo "<img id='lbl-profile-imageE' src='../../resources/profile-img/$foto.jpg' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
+              onclick='abrirSelector()'>";
           ?>
           <div class="custom-file col-md-4 offset-md-4 mb-3"></div>
         <form id="formulario-estado">
