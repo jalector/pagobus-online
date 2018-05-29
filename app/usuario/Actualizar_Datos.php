@@ -40,17 +40,18 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
 
-        </ul>
+        </ul> 
         <p id="bar-usuario-nombre"><i><?php echo $_SESSION["nombre"]; ?></i></p>
         <a>
-          <div id="preview">
+           <div id="preview">
             <?php 
-              if (file_exists('../../resources/profile-img/img'.$_SESSION["id"].'.jpg')) {
-                $foto = "img".$_SESSION["id"];
+              $foto = '../../resources/profile-img/img'.$_SESSION["id"].'.jpg';
+              if (file_exists($foto)) {
+                $foto = "img".$_SESSION["id"].".jpg";
               } else {
-                $foto = "default";
+                $foto = "user.png";
               }
-              echo ("<img src='../../resources/profile-img/".$foto.".jpg' id='bar-usuario-imagen'></img>");
+              echo ("<img src='../../resources/profile-img/".$foto."' id='bar-usuario-imagen'></img>");
             ?>
         </div>
         </a>
@@ -79,16 +80,14 @@
 
           <!-- Imagen de Usuario -->
           <?php 
-          $foto = '../../resources/profile-img/img'.$_SESSION["id"].'.jpg';
-          if (file_exists($foto)) {
-            $foto = "img".$_SESSION["id"];
-          } else {
-            $foto = "default";
-          }
-          
-          echo ("<img id='lbl-profile-image' src='../../resources/profile-img/".$foto.".jpg' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
-          onclick='abrirSelector()'' title='Cambiar foto de perfil'>");
-         
+              $foto = '../../resources/profile-img/img'.$_SESSION["id"].'.jpg';
+              if (file_exists($foto)) {
+                $foto = "img".$_SESSION["id"].".jpg";
+              } else {
+               $foto = "user.png";
+              }
+              echo "<img id='lbl-profile-image' src='../../resources/profile-img/$foto' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
+              onclick='abrirSelector()' title='Cambiar foto de perfil'>";
           ?>
           <div class="custom-file col-md-4 offset-md-4 mb-3">
             <input id="input-foto" name="input-foto" type="file"  accept=".jpg,.jpeg,.png" onchange="readImage()" style="display: none">

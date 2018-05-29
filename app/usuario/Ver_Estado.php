@@ -48,11 +48,11 @@
             <?php 
               $foto = '../../resources/profile-img/img'.$_SESSION["id"].'.jpg';
               if (file_exists($foto)) {
-                $foto = "img".$_SESSION["id"];
+                $foto = "img".$_SESSION["id"].".jpg";
               } else {
-                $foto = "default";
+                $foto = "user.png";
               }
-              echo ("<img src='../../resources/profile-img/".$foto.".jpg' id='bar-usuario-imagen'></img>");
+              echo ("<img src='../../resources/profile-img/".$foto."' id='bar-usuario-imagen'></img>");
             ?>
         </div>
         </a>
@@ -80,11 +80,11 @@
           <?php 
               $foto = '../../resources/profile-img/img'.$_SESSION["id"].'.jpg';
               if (file_exists($foto)) {
-                $foto = "img".$_SESSION["id"];
+                $foto = "img".$_SESSION["id"].".jpg";
               } else {
-                $foto = "default";
+               $foto = "user.png";
               }
-              echo "<img id='lbl-profile-imageE' src='../../resources/profile-img/$foto.jpg' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
+              echo "<img id='lbl-profile-imageE' src='../../resources/profile-img/$foto' class='rounded-circle mx-auto d-block img-thumbnail mb-1'
               onclick='abrirSelector()'>";
           ?>
           <div class="custom-file col-md-4 offset-md-4 mb-3"></div>

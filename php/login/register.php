@@ -18,7 +18,7 @@
     $correo = $_POST['mail'];
 
     //Consulta a ejecutar Para agregar un nuevo usuario
-    $conexion->query("insert into Historial values(null, 'nuevo_usuario', 'Registro por usuario', null)");
+    $conexion->query("insert into Historial values(null, 'nuevo_usuario', 'Registro por usuario', 1,1)");
     $idHistorial = $conexion->query("select id_Historial as id from Historial order by id_Historial desc limit 1")->fetch_assoc()['id'];
     $conexion->query("insert into Estado values (null, 'pendiente', curdate(), $idHistorial)");
     $conexion->query("insert into Usuario values (null, '$password', '$nombre', '$apellido', '$fecha', 'default', '$colonia', '$domicilio', '$correo',null, 3, $idHistorial)");      
