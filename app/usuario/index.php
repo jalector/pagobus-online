@@ -42,11 +42,11 @@
             <?php 
               $foto = '../../resources/profile-img/img'.$_SESSION["id"].'.jpg';
               if (file_exists($foto)) {
-                $foto = "img".$_SESSION["id"];
+                $foto = "img".$_SESSION["id"].".jpg";
               } else {
-                $foto = "default";
+                $foto = "user.png";
               }
-              echo ("<img src='../../resources/profile-img/".$foto.".jpg' id='bar-usuario-imagen'></img>");
+              echo ("<img src='../../resources/profile-img/".$foto."' id='bar-usuario-imagen'></img>");
             ?>
         </div>
       </div>

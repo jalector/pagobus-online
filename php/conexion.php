@@ -6,7 +6,7 @@
      */
     function conectar(){        
         $user = "root";
-        $password = "sal";
+        $password = "";
         $dbname = "PagobusOnline";
         $host = "localhost";
         $conexion = new mysqli($host, $user, $password, $dbname) or die("Conexión fallida: ".pg_last_error());
