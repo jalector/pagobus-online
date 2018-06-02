@@ -2,7 +2,7 @@
     include '../../php/login/session.php';
     session_start();
     if(!checkPermission($_SESSION['tipo'])){
-      header("Location: ../server-errors/error_404.html");
+      header("Location: ../server-errors/no_login.html");
     }
 ?>
 <!DOCTYPE html>
